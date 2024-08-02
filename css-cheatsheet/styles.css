@@ -1,5 +1,5 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
     margin: 0.6em 0 0 0.3em;
@@ -21,8 +21,7 @@ th {
     background-color: cornflowerblue;
     color: navy;
     font-size: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    /** text-transform: uppercase; **/
     padding: 0.15em 0.3em;
     border-top: LightSteelBlue solid 0.3em;
 }
