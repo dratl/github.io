@@ -1,5 +1,5 @@
 * {
-	font-family: font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
 }
 
 /** Secciones principales **/
@@ -16,15 +16,15 @@ main {
 }
 
 section {
-	width: 42%;
+	width: 41.5%;
 	display: block;
 	float: left;
 	padding: 4%;
-	background-color: Gainsboro;
+	border-right: black solid 2px;
 }
 
 section.cv {
-	background-color: Darkgrey;
+	border: black dotted 2px;
 }
 
 footer {
@@ -34,14 +34,56 @@ footer {
 }
 
 
-/** Estilos del Header **/
+/** Tipográficos generales **/
 
-header h1 {
+h1 {
 	padding: 4% 4% 0;
-	color: white;
-	background-color: cornflowerblue;
+	font-size: 2.4em;
+	letter-spacing: -0.012em;
+	text-align: center;
 }
 
-header h1::first-letter {
-	color: black;
+h1::first-letter {
+	color: crimson;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+h3 {
+	color: dimgrey;
+	font-size: 1.05em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+h4 {
+	font-size: 1.2em;
+	color: crimson;
+	text-transform: uppercase;
+	border-bottom: crimson solid 1px;
+}
+
+p {
+	font-size: 0.9em;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
 }
