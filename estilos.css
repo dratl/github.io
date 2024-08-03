@@ -7,6 +7,7 @@
 header {
 	max-width: 1000px;
 	margin: 0 auto;
+
 }
 
 main {
@@ -19,14 +20,28 @@ section {
 	display: block;
 	float: left;
 	padding: 4%;
+	background-color: Gainsboro;
 }
+
+section.cv {
+	background-color: Darkgrey;
+}
+
+footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	clear: left;
+}
+
 
 /** Estilos del Header **/
 
 header h1 {
 	padding: 4% 4% 0;
+	color: white;
+	background-color: cornflowerblue;
 }
 
 header h1::first-letter {
-	color: crimson;
+	color: black;
 }
