@@ -1,0 +1,69 @@
+* {
+	font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
+}
+
+/** Header **/
+header ul {
+	padding: 0;
+	margin: 0;
+}
+header ul li {
+	display: inline;
+	vertical-align: baseline;
+}
+header ul li.titulo {
+	font-size: 1.8em;
+	font-weight: 700;
+}
+header ul li.actualizacion:last-child {
+	float: right;
+	font-size: 0.9em;
+}
+
+/* Diseño de tabla principal*/
+table {
+	display: inline-table;
+	width: 30%;
+	min-width: 300px;
+	font-size: 0.9em;
+	margin-top: 1.5em;
+}
+table td, table th {
+	vertical-align: top;
+	padding: 0.3em;
+}
+table thead th {
+	background-color: crimson;
+}
+table thead th h2 {
+	text-align: left;
+	margin: 0;
+	font-size: 1.2em;
+	color: white;
+}
+table tbody td {
+	border: 1px solid Gainsboro;
+}
+table tfoot td {
+	background-color: whitesmoke;
+}
+ 
+/* Colores */
+table#colores tbody tr td span {
+	display: block;
+	height: 24px;
+	width: 24px;
+	
+}
+table#colores tbody tr td span.black {
+	background-color: black;
+}
+table#colores tbody tr td span.crimson {
+	background-color: crimson;
+}
+table#colores tbody tr td span.dimgrey {
+	background-color: dimgrey;
+}
+table#colores tbody tr td span.whitesmoke {
+	background-color: whitesmoke;
+}
