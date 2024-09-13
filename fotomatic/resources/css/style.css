@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 10;
 }
 
 header .content {
@@ -117,6 +118,7 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
 }
 
 #sign-up-cta {
@@ -124,6 +126,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-top: 170px;
+  margin-bottom: 170px;
+  margin-left: 10%;
 }
 
 #sign-up-cta .content {
