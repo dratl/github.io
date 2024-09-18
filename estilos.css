@@ -15,24 +15,40 @@ header {
 main {
 	max-width: 1000px;
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
 }
 
-section {
-	width: 41.5%;
-	display: block;
-	float: left;
-	padding: 4%;
-	border-right: black solid 2px;
+main section {
+	width: 49%;
+	background-color: lightgray;
+	border-top: solid 1px #333;
+	margin-bottom: 1.8em;
 }
 
-section.cv {
-	border: black dotted 2px;
+aside {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+aside figure {
+	width: 30%;
+	background-color: lightgray;
+	margin: 0 0 1.8em;
+}
+
+aside figure img {
+	width: 100%;
 }
 
 footer {
 	max-width: 1000px;
 	margin: 0 auto;
-	clear: left;
 }
 
 
@@ -118,6 +134,8 @@ hr.dos:after {
 nav ul {
 	margin: 0 0 0.6em;
 	font-size: 0.9em;
+	padding: 0 1em;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -126,5 +144,18 @@ nav ul li {
 
 nav ul li#hoy:last-child {
 	float: right;
-	margin-right: 3.3em;
+}
+
+@media only screen and (max-width: 620px) {
+	main section {
+		width: 100%;
+	}
+	nav ul li#hoy:last-child {
+		display: none;
+	}
+
+	aside figure {
+		width: 50%;
+	}
+	
 }
