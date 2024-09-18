@@ -22,27 +22,32 @@ main {
 }
 
 main section {
-	width: 49%;
+	width: 45%;
 	background-color: lightgray;
 	border-top: solid 1px #333;
 	margin-bottom: 1.8em;
+	padding: 2%;
 }
 
 aside {
 	max-width: 1000px;
 	margin: 0 auto;
+	
+}
+
+aside div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-aside figure {
+aside div figure {
 	width: 30%;
 	background-color: lightgray;
 	margin: 0 0 1.8em;
 }
 
-aside figure img {
+aside div figure img {
 	width: 100%;
 }
 
@@ -75,6 +80,7 @@ h1::first-letter {
 h2 {
 	text-transform: uppercase;
 	font-size: 1.2em;
+	margin: 0;
 }
 
 h3 {
@@ -89,6 +95,7 @@ h4 {
 	color: crimson;
 	text-transform: uppercase;
 	border-bottom: crimson solid 1px;
+	margin: 0;
 }
 
 p {
@@ -154,7 +161,7 @@ nav ul li#hoy:last-child {
 		display: none;
 	}
 
-	aside figure {
+	aside div figure {
 		width: 50%;
 	}
 	
