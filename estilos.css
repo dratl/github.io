@@ -124,7 +124,7 @@ nav ul li {
 	display: inline;
 }
 
-nav ul li.fecha:last-child {
+nav ul li#hoy:last-child {
 	float: right;
 	margin-right: 3.3em;
 }

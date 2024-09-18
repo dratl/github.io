@@ -17,7 +17,13 @@
           <ul>
             <li>Usted se encuentra en:</li>
             <li>página principal</li>
-            <li class="fecha">Martes, 18 Febrero 2024</li>
+            <li id="hoy">
+				<script>
+					const fecha = new Date();
+					const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+					document.getElementById("hoy").innerHTML = fecha.toLocaleDateString('es-ES', options);
+				</script>
+			</li>
           </ul>
         </nav>
       <hr class="dos">
