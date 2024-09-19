@@ -57,7 +57,7 @@ body {
 	padding: 0;
 }
 h1 {
-	padding: 4% 4% 0;
+	padding: 6% 4% 4%;
 	font-size: 2.4em;
 	letter-spacing: -0.012em;
 	text-align: center;
@@ -159,9 +159,9 @@ main {
 main section {
 	width: 45%;
 	background-color: rgba(211, 211, 211, 0.2);
-	border-top: solid 1px dimgray;
 	margin-bottom: 1.8em;
 	padding: 2%;
+	border-radius: 0.3em;
 }
 
 /** Laboratorio **/
@@ -198,6 +198,7 @@ aside div figure {
 
 aside div figure img {
 	width: 100%;
+	border-radius: 0.3em;
 }
 
 aside div figure p {
@@ -208,7 +209,7 @@ aside div figure p {
 /** Pie de página**/
 
 footer {
-	margin: 0;
+	margin: 1.8em 0 0;
 	padding: 1.2em;
 	background-color: dimgray;
 	text-align: center;
@@ -258,14 +259,14 @@ nav ul li#hoy:last-child {
 
 @media only screen and (max-width: 620px) {
 	main section {
-		width: 100%;
+		width: 90%;
 	}
 	nav ul li#hoy:last-child {
 		display: none;
 	}
 
 	aside div figure {
-		width: 50%;
+		width: 48%;
 	}
 	
 }
