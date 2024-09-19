@@ -4,6 +4,141 @@
 	font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
 }
 
+@font-face {
+	font-family: 'dratl-github';
+	src: url('./font/dratl-github.eot?17820220');
+	src: url('./font/dratl-github.eot?17820220#iefix') format('embedded-opentype'),
+		 url('./font/dratl-github.woff?17820220') format('woff'),
+		 url('./font/dratl-github.ttf?17820220') format('truetype'),
+		 url('./font/dratl-github.svg?17820220#dratl-github') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  .demo-icon {
+	font-family: "dratl-github";
+	font-style: normal;
+	font-weight: normal;
+	speak: never;
+	color: crimson;
+   
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+   
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+   
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+   
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+   
+	/* You can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+   
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+   
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+
+/** Elementos generales **/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	padding: 4% 4% 0;
+	font-size: 2.4em;
+	letter-spacing: -0.012em;
+	text-align: center;
+	font-weight: 700;
+}
+
+h1::first-letter {
+	color: crimson;
+	font-weight: 900;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+h3 {
+	color: slategray;
+	font-size: 1.05em;
+	font-weight: 400;
+	font-style: italic;
+}
+
+h4 {
+	font-size: 1.2em;
+	color: crimson;
+	text-transform: uppercase;
+	border-bottom: crimson solid 1px;
+	margin: 0;
+}
+
+p, ul {
+	font-size: 0.9em;
+}
+
+a {
+	color: dimgray;
+	text-decoration: none;
+	border-bottom: white solid 1px;
+}
+
+a:hover {
+	color: gray;
+	border-bottom: solid 1px;
+}
+
+hr.uno {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double dimgray;
+    color: dimgray;
+    text-align: center;
+}
+hr.uno:after {
+    content: "ӿ";
+    font-size: 1.5em;
+    padding: 0 0 0.25em;
+    background: white;
+    position: relative;
+    top: -18px;
+}
+
+hr.dos {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double dimgray;
+    color: dimgray;
+    text-align: center;
+    margin-bottom: 1.8em;
+}
+hr.dos:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    padding: 0 0.25em;
+    background: white;
+}
+
 /** Secciones principales **/
 
 header {
@@ -23,11 +158,25 @@ main {
 
 main section {
 	width: 45%;
-	background-color: lightgray;
-	border-top: solid 1px #333;
+	background-color: rgba(211, 211, 211, 0.2);
+	border-top: solid 1px dimgray;
 	margin-bottom: 1.8em;
 	padding: 2%;
 }
+
+/** Laboratorio **/
+
+section.laboratorio ul {
+	padding: 0;
+}
+
+section.laboratorio ul li {
+	list-style-type: none;
+	width: 100%;
+	margin-bottom: 0.3em;
+}
+
+/** Portafolio **/
 
 aside {
 	max-width: 1000px;
@@ -43,7 +192,7 @@ aside div {
 
 aside div figure {
 	width: 30%;
-	background-color: lightgray;
+	border-bottom: dimgray dotted 2px;
 	margin: 0 0 1.8em;
 }
 
@@ -51,90 +200,42 @@ aside div figure img {
 	width: 100%;
 }
 
+aside div figure p {
+	font-size: 0.75em;
+	margin: 0.6em;
+}
+
+/** Pie de página**/
+
 footer {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-
-/** Elementos generales **/
-
-h1 {
-	padding: 4% 4% 0;
-	font-size: 2.4em;
-	letter-spacing: -0.012em;
+	margin: 0;
+	padding: 1.2em;
+	background-color: dimgray;
 	text-align: center;
-	font-weight: 700;
-	text-shadow:
-    3px 3px 0 whitesmoke,
-    -3px 3px 0 whitesmoke,
-    -3px -3px 0 whitesmoke,
-    3px -3px 0 whitesmoke;
 }
 
-h1::first-letter {
-	color: crimson;
-	font-weight: 900;
+footer .demo-icon {
+	color: gainsboro;
 }
 
-h2 {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	margin: 0;
+footer ul li {
+	list-style-type: none;
+	margin-bottom: 0.6em;
 }
 
-h3 {
-	color: dimgrey;
-	font-size: 1.05em;
-	font-weight: 400;
-	font-style: italic;
+footer ul {
+	padding: 0;
 }
 
-h4 {
-	font-size: 1.2em;
-	color: crimson;
-	text-transform: uppercase;
-	border-bottom: crimson solid 1px;
-	margin: 0;
+footer ul li a {
+	color: gainsboro;
+	border-bottom: hidden;
 }
 
-p {
-	font-size: 0.9em;
+footer ul li a:hover {
+	color: white;
 }
 
-hr.uno {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-}
-hr.uno:after {
-    content: "ӿ";
-    font-size: 1.5em;
-    padding: 0 0 0.25em;
-    background: white;
-    position: relative;
-    top: -18px;
-}
-
-hr.dos {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-    margin-bottom: 1.8em;
-}
-hr.dos:after {
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    padding: 0 0.25em;
-    background: white;
-}
 
 /** Sistema de navegación **/
 
@@ -152,6 +253,8 @@ nav ul li {
 nav ul li#hoy:last-child {
 	float: right;
 }
+
+/** Otras resoluciones de pantalla **/
 
 @media only screen and (max-width: 620px) {
 	main section {
