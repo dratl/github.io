@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <h1>CSS Cheat Sheet</h1>
+        <h1>My Cheat Sheet</h1>
         <table>
             <thead>
                 <tr>
@@ -14,7 +14,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Syntax</td>
+                    <td>Language declaration</td>
+                    <td>&lt;html lang="es-ES"&gt;</td>
+                </tr>
+                <tr>
+                    <td>Character encoding</td>
+                    <td>&lt;meta charset="utf-8"&gt;</td>
+                </tr>
+                <tr>
+                    <td>Favicon</td>
+                    <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
+                </tr>
+                <tr>
+                    <td>CSS Syntax</td>
                     <td>
                             selector{<br>
                             property: value;<br>
@@ -60,6 +72,57 @@
                 <tr>
                     <td>[title~="chair"]</td>
                     <td>title element containing a word</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Animation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>transition-property:</td>
+                    <td>
+                        <i>property;</i><br>
+                        all;<br>
+                        none;
+                    </td>
+                </tr>
+                <tr>
+                    <td>transition-duration:</td>
+                    <td>
+                        1s<br>
+                        450ms<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>transition-timing-function:</td>
+                    <td>
+                        ease;<br>
+                        ease-in; (starts slow)<br>
+                        ease-out; (starts fast)<br>
+                        ease-in-out;<br>
+                        linear;<br>
+                        cubic-bezier(0.2, -2, 0.8, 2);
+                    </td>
+                </tr>
+                <tr>
+                    <td>transition-delay:</td>
+                    <td>
+                        1s<br>
+                        450ms<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>transition:</td>
+                    <td>
+                        property, duration, timing, delay.<br>
+                        border-bottom 300ms ease-out 150ms;<br>
+                        color 300ms ease-out 150ms, font-size 300ms ease-out 150ms; (multiple properties)<br>
+                        all 300ms ease-out 150ms; (same value all properties)
+                    </td>
                 </tr>
             </tbody>
         </table>
