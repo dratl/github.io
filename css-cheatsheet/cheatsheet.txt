@@ -1,0 +1,87 @@
+
+// Arithmetic Operators
+
+Add: +
+Subtract: -
+Multiply: *
+Divide: /
+Remainder: %
+
+// Properties
+
+console.log('Hello'.length); // Prints 5
+
+// Methods
+
+console.log('hello'.toUpperCase()); // Prints 'HELLO'
+console.log('Hey'.startsWith('H')); // Prints true
+
+// Built-in Objects
+
+console.log(Math.random()); // Prints a random number between 0 and 1
+console.log(Math.floor(Math.random() * 50)); // Prints a random whole number between 0 and 50
+Math.random() * 50; // To generate a random number between 0 and 50, we could multiply this result by 50
+Math.floor(Math.random() * 50); // Takes a decimal number, and rounds down to the nearest whole number.
+
+// Variable
+
+var myName = 'Arya';
+console.log(myName);
+
+var is used in pre-ES6 versions of JavaScript. It is function scoped.
+let is the preferred way to declare a variable when it can be reassigned. It is block scoped.
+const is the preferred way to declare a variable with a constant value. It is also block scoped.
+
+let newVariable; // Output undefined
+
+let w = 4;
+w += 1; // Can be written as w = w + 1
+
+let x = 20;
+x -= 5; // Can be written as x = x - 5
+console.log(x); // Output: 15
+
+let y = 50;
+y *= 2; // Can be written as y = y * 2
+console.log(y); // Output: 100
+
+let z = 8;
+z /= 2; // Can be written as z = z / 2
+console.log(z); // Output: 4
+
+// Increment and Decrement Operator
+
+let a = 10;
+a++;
+console.log(a); // Output: 11
+
+let b = 20;
+b--;
+console.log(b); // Output: 19
+
+// String Concatenation with Variables
+
+let myPet = 'armadillo';
+console.log('I own a pet ' + myPet + '.'); // Output: 'I own a pet armadillo.'
+
+// String Interpolation
+
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+
+// typeof operator
+
+const unknown1 = 'foo';
+console.log(typeof unknown1); // Output: string
+
+const unknown2 = 10;
+console.log(typeof unknown2); // Output: number
+
+const unknown3 = true; 
+console.log(typeof unknown3); // Output: boolean
+
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable); // Output: string
+newVariable = 1;
+console.log(typeof newVariable); // Output: number
