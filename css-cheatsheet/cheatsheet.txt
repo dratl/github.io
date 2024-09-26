@@ -85,3 +85,47 @@ let newVariable = 'Playing around with typeof.';
 console.log(typeof newVariable); // Output: string
 newVariable = 1;
 console.log(typeof newVariable); // Output: number
+
+// If...Else Statements
+
+if (false) {
+  console.log('The code in this block will not run.');
+} else {
+  console.log('But the code in this block will!');
+}
+
+// Comparison Operators
+
+Less than: <
+Greater than: >
+Less than or equal to: <=
+Greater than or equal to: >=
+Is equal to: ===
+Is not equal to: !==
+
+10 < 12 // Evaluates to true
+'apples' === 'oranges' // false
+
+let hungerLevel = 3;
+if (hungerLevel > 7) {
+  console.log('Time to eat!');
+} else {
+  console.log('We can eat later!');
+}
+
+// Logical Operators
+
+the 'and' operator (&&)
+the 'or' operator (||)
+the 'not' operator, otherwise known as the bang operator (!)
+
+if (stopLight === 'green' && pedestrians === 0) {
+  console.log('Go!');
+} else {
+  console.log('Stop');
+}
+
+let excited = true;
+console.log(!excited); // Prints false
+let sleepy = false;
+console.log(!sleepy); // Prints true
