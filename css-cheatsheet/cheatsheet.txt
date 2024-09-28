@@ -217,3 +217,90 @@ switch (groceryItem) {
     console.log('Invalid item');
     break;
 } // Prints 'Papayas are $1.29'
+
+// Function Declarations and Calling
+
+function greetInSpanish() {
+  console.log('Buenas tardes');
+}
+
+greetInSpanish();
+
+// Parameters and Arguments (Functions)
+
+function sayThanks(name) {
+  console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+}
+
+sayThanks('Cole');
+
+// Default Parameters (Functions)
+
+function greeting (name = 'stranger') {
+  console.log(`Hello, ${name}!`)
+}
+
+greeting('Nick') // Output: Hello, Nick!
+greeting() // Output: Hello, stranger!
+
+// Return (Functions)
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+
+const numOfMonitors = monitorCount(5,4);
+
+console.log(numOfMonitors);
+
+// Helper Functions (the return value of a function inside another function.)
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+};
+
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+};
+
+const totalCost = costOfMonitors(5,4);
+
+console.log(totalCost);
+
+// Function Expressions (A function expression is often stored in a variable in order to refer to it.)
+
+const plantNeedsWater = function(day) {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+plantNeedsWater('Tuesday');
+
+console.log(plantNeedsWater('Wednesday'));
+
+// Arrow Functions
+
+const plantNeedsWater = function(day) // Se reescribe como
+const plantNeedsWater = (day) =>
+{
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+// Concise Body Arrow Functions
+
+const functionName = () => {}; // Zero Parameters
+const functionName = paramOne => {} // One Parameter
+const functionName = (paramOne, paramTwo) => {} // Two or more Parameters
+
+| const squareNum = (num) => {
+|   return num * num;
+| };
+| // Function refactor
+| const squareNum = num => num * num;

@@ -6,266 +6,268 @@
     </head>
     <body>
         <h1>My Cheat Sheet</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Basics</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Language declaration</td>
-                    <td>&lt;html lang="es-ES"&gt;</td>
-                </tr>
-                <tr>
-                    <td>Character encoding</td>
-                    <td>&lt;meta charset="utf-8"&gt;</td>
-                </tr>
-                <tr>
-                    <td>Favicon</td>
-                    <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
-                </tr>
-                <tr>
-                    <td>CSS Syntax</td>
-                    <td>
-                            selector{<br>
-                            property: value;<br>
-                            property2: value2;<br>
-                            }<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Include external css file</td>
-                    <td>&lt;link rel="stylesheet" type="text/css" href="/style.css" /&gt;</td>
-                </tr>
-                <tr>
-                    <td>Internal styles</td>
-                    <td>
-                        &lt;style type="text/css"&gt; <br>
-                        div { color: #444;} <br> 
-                        &lt;/style&gt;
-                    </td>
-                </tr>
-                <tr>
-                    <td>Inline styles</td>
-                    <td>
-                        &lt;tag style="property: value"&gt; &lt;/tag&gt;
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Attribute Selectors</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>a[target]</td>
-                    <td>links with a target attribute</td>
-                </tr>
-                <tr>
-                    <td>a[target="_blank"]</td>
-                    <td>links which open in new tab</td>
-                </tr>
-                <tr>
-                    <td>[title~="chair"]</td>
-                    <td>title element containing a word</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Animation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>transition-property:</td>
-                    <td>
-                        <i>property;</i><br>
-                        all;<br>
-                        none;
-                    </td>
-                </tr>
-                <tr>
-                    <td>transition-duration:</td>
-                    <td>
-                        1s<br>
-                        450ms<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>transition-timing-function:</td>
-                    <td>
-                        ease;<br>
-                        ease-in; (starts slow)<br>
-                        ease-out; (starts fast)<br>
-                        ease-in-out;<br>
-                        linear;<br>
-                        cubic-bezier(0.2, -2, 0.8, 2);
-                    </td>
-                </tr>
-                <tr>
-                    <td>transition-delay:</td>
-                    <td>
-                        1s<br>
-                        450ms<br>
-                    </td>
-                </tr>
-                <tr>
-                    <td>transition:</td>
-                    <td>
-                        property, duration, timing, delay.<br>
-                        border-bottom 300ms ease-out 150ms;<br>
-                        color 300ms ease-out 150ms, font-size 300ms ease-out 150ms; (multiple properties)<br>
-                        all 300ms ease-out 150ms; (same value all properties)
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Pseudo classes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>a:hover</td>
-                    <td>link with mouse over it</td>
-                </tr>
-                <tr>
-                    <td>input:checked</td>
-                    <td>checked inputs</td>
-                </tr>
-                <tr>
-                    <td>p::first-letter</td>
-                    <td>first letter in p</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Clearfix</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Syntax</td>
-                    <td>.clearfix:after {<br>
-                        clear: both;<br>
-                        content: " ";<br>
-                        display: block;<br>
-                        font-size: 0;<br>
-                        height: 0;<br>
-                        visibility: hidden;<br>
-                    }<br>
-                        .clearfix  display: inline-block; <br>
-                        * html .clearfix { height: 1%; } <br>
-                        .clearfix { display: block; }</td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Flexbox-Container</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>display:<br>Changes an element to a block-level container with flex items inside of it.</td>
-                    <td>
-                        flex<br>
-                        inline-flex
-                    </td>
-                </tr>
-                <tr>
-                    <td>flex-direction:<br>Is used to specify the main and cross axes.</td>
-                    <td>
-                        row<br>
-                        row-reverse<br>
-                        column<br>
-                        column-reverse
-                    </td>
-                </tr>
-                <tr>
-                    <td>flex-wrap:<br>Specifies that elements should shift along the cross axis if the flex container is not large enough.</td>
-                    <td>
-                        nowrap<br>
-                        wrap<br>
-                        wrap-reverse
-                    </td>
-                </tr>
-                <tr>
-                    <td>justify-content:<br>Is used to space items along the main axis.</td>
-                    <td>
-                        flex-start<br>
-                        flex-end<br>
-                        center<br>
-                        space-between<br>
-                        space-around<br>
-                        space-evenly
-                    </td>
-                </tr>
-                <tr>
-                    <td>align-items:<br>Is used to space items along the cross axis.</td>
-                    <td>
-                        flex-start<br>
-                        flex-end<br>
-                        center<br>
-                        baseline<br>
-                        stretch
-                    </td>
-                </tr>
-                <tr>
-                    <td>align-content:<br>Ss used to space rows along the cross axis.</td>
-                    <td>
-                        flex-start<br>
-                        flex-end<br>
-                        center<br>
-                        space-between<br>
-                        space-around<br>
-                        stretch
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="2">Flexbox-Items</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>order:<br>Allows you to explictly set the order you want each child to appear in.</td>
-                    <td>integer</td>
-                </tr>
-                <tr>
-                    <td>flex-grow:<br>Is used to specify how much space (and in what proportions) flex items absorb along the main axis.</td>
-                    <td>
-                        1 (applied to all)<br>
-                        (1, 2 and 3)
-                    </td>
-                </tr>
-                <tr>
-                    <td>flex-basis:<br>Is used to specify the initial size of an element styled with flex-grow and/or flex-shrink.</td>
-                    <td>50% 25%;</td>
-                </tr>
-                <tr>
-                    <td>flex-shrink:<br>Is used to specify how much flex items shrink and in what proportions along the main axis.</td>
-                    <td>flex-shrink: 1;</td>
-                </tr>
-                <tr>
-                    <td>align-self:<br>Sets alignment for individual item. See "align-items" for options.</td>
-                    <td>flex-start|flex-end|center|baseline|stretch;</td>
-                </tr>
-            </tbody>
-        </table>
+        <div id="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Basics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Language declaration</td>
+                        <td>&lt;html lang="es-ES"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Character encoding</td>
+                        <td>&lt;meta charset="utf-8"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Favicon</td>
+                        <td>&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Syntax</td>
+                        <td>
+                                selector{<br>
+                                property: value;<br>
+                                property2: value2;<br>
+                                }<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Include external css file</td>
+                        <td>&lt;link rel="stylesheet" type="text/css" href="/style.css" /&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>Internal styles</td>
+                        <td>
+                            &lt;style type="text/css"&gt; <br>
+                            div { color: #444;} <br> 
+                            &lt;/style&gt;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Inline styles</td>
+                        <td>
+                            &lt;tag style="property: value"&gt; &lt;/tag&gt;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Attribute Selectors</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a[target]</td>
+                        <td>links with a target attribute</td>
+                    </tr>
+                    <tr>
+                        <td>a[target="_blank"]</td>
+                        <td>links which open in new tab</td>
+                    </tr>
+                    <tr>
+                        <td>[title~="chair"]</td>
+                        <td>title element containing a word</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Animation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>transition-property:</td>
+                        <td>
+                            <i>property;</i><br>
+                            all;<br>
+                            none;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>transition-duration:</td>
+                        <td>
+                            1s<br>
+                            450ms<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>transition-timing-function:</td>
+                        <td>
+                            ease;<br>
+                            ease-in; (starts slow)<br>
+                            ease-out; (starts fast)<br>
+                            ease-in-out;<br>
+                            linear;<br>
+                            cubic-bezier(0.2, -2, 0.8, 2);
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>transition-delay:</td>
+                        <td>
+                            1s<br>
+                            450ms<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>transition:</td>
+                        <td>
+                            property, duration, timing, delay.<br>
+                            border-bottom 300ms ease-out 150ms;<br>
+                            color 300ms ease-out 150ms, font-size 300ms ease-out 150ms; (multiple properties)<br>
+                            all 300ms ease-out 150ms; (same value all properties)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Pseudo classes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a:hover</td>
+                        <td>link with mouse over it</td>
+                    </tr>
+                    <tr>
+                        <td>input:checked</td>
+                        <td>checked inputs</td>
+                    </tr>
+                    <tr>
+                        <td>p::first-letter</td>
+                        <td>first letter in p</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Clearfix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Syntax</td>
+                        <td>.clearfix:after {<br>
+                            clear: both;<br>
+                            content: " ";<br>
+                            display: block;<br>
+                            font-size: 0;<br>
+                            height: 0;<br>
+                            visibility: hidden;<br>
+                        }<br>
+                            .clearfix  display: inline-block; <br>
+                            * html .clearfix { height: 1%; } <br>
+                            .clearfix { display: block; }</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Flexbox-Container</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>display:<br>Changes an element to a block-level container with flex items inside of it.</td>
+                        <td>
+                            flex<br>
+                            inline-flex
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>flex-direction:<br>Is used to specify the main and cross axes.</td>
+                        <td>
+                            row<br>
+                            row-reverse<br>
+                            column<br>
+                            column-reverse
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>flex-wrap:<br>Specifies that elements should shift along the cross axis if the flex container is not large enough.</td>
+                        <td>
+                            nowrap<br>
+                            wrap<br>
+                            wrap-reverse
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>justify-content:<br>Is used to space items along the main axis.</td>
+                        <td>
+                            flex-start<br>
+                            flex-end<br>
+                            center<br>
+                            space-between<br>
+                            space-around<br>
+                            space-evenly
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>align-items:<br>Is used to space items along the cross axis.</td>
+                        <td>
+                            flex-start<br>
+                            flex-end<br>
+                            center<br>
+                            baseline<br>
+                            stretch
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>align-content:<br>Ss used to space rows along the cross axis.</td>
+                        <td>
+                            flex-start<br>
+                            flex-end<br>
+                            center<br>
+                            space-between<br>
+                            space-around<br>
+                            stretch
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Flexbox-Items</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>order:<br>Allows you to explictly set the order you want each child to appear in.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td>flex-grow:<br>Is used to specify how much space (and in what proportions) flex items absorb along the main axis.</td>
+                        <td>
+                            1 (applied to all)<br>
+                            (1, 2 and 3)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>flex-basis:<br>Is used to specify the initial size of an element styled with flex-grow and/or flex-shrink.</td>
+                        <td>50% 25%;</td>
+                    </tr>
+                    <tr>
+                        <td>flex-shrink:<br>Is used to specify how much flex items shrink and in what proportions along the main axis.</td>
+                        <td>flex-shrink: 1;</td>
+                    </tr>
+                    <tr>
+                        <td>align-self:<br>Sets alignment for individual item. See "align-items" for options.</td>
+                        <td>flex-start|flex-end|center|baseline|stretch;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
