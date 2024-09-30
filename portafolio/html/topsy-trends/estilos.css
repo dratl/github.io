@@ -1,0 +1,132 @@
+/* Esto es un desastre */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Gudea', sans-serif;
+	line-height: 1;
+	margin-bottom: 40px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ClearFix */
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+
+/* Fuentes Ovejuna */
+h1 { color: white; font-family: 'bebas_neue_regularregular'; font-size: 72px; margin: 108px 0 54px 0;}
+h2 { color: white; font-family: 'bebas_neue_regularregular'; font-size: 48px; margin: 50px 0 54px 0;}
+
+/* Formaditos se ven más bonitos */
+.fila { width: 100%; }
+#pleca { margin: 0 auto; width: 1144px; }
+	.logo { float: left; width: 148px; }
+		.logo img { margin: 12px 0; }
+	.navegacion { float:left; margin-top: 29px; text-align: right; width: 996px }
+.cuerpo { margin: 0 auto; width: 1144px; }
+	.cuerpo h1, .cuerpo h2 { text-align: center; }
+
+	.una_columna { float: left; margin-right: 28px; width: 372px; }
+	.columna_principal { float: left; width: 716px }
+
+/* Fonderos */
+.negro { background-color: black; }
+.azul { background-color: #0089ff; }
+.grid { background: transparent url("img/grid.png") center top repeat-y; }
+
+/* Listas */
+.navegacion ul li { display: inline; }
+	.navegacion ul li a { color: white; text-decoration: none; }
+ul.caja_busqueda_principal { text-align: center; }
+	ul.caja_busqueda_principal li { display: inline; }
+		ul.caja_busqueda_principal li input { border: 1px solid #aab2bd; font-size: 12px; height: 29px; width: 460px; }
+		ul.caja_busqueda_principal li button { background: #00c663; border: 1px solid #00c663; color: white; font-size: 14px; height: 33px; margin-left: -5px; padding-left: 12px; padding-right: 12px; }
+
+ul.caja_busqueda_resultados { margin: 64px 0 64px 28px; }
+	ul.caja_busqueda_resultados li { display: inline; }
+		ul.caja_busqueda_resultados li input { border: 1px solid #aab2bd; font-size: 12px; height: 29px; width: 643px; }
+		ul.caja_busqueda_resultados li button { background: #00c663; border: 1px solid #00c663; color: white; font-size: 14px; height: 33px; margin-left: -5px; padding-left: 12px; padding-right: 12px; }
+
+/* Tabletas de mejorina */
+table.tendencias { margin: 0 auto; width: 716px; }
+	table.tendencias td { text-align: right; }
+	table.tendencias td strong { font-weight: bold; }
+	table.tendencias td:first-child { color: white; text-align: left; }
+	table.tendencias thead td, table.tendencias tbody td { border-bottom: solid 1px white; }
+	table.tendencias thead td, table.tendencias tfoot td { padding: 12px 0; }
+	table.tendencias thead td { color: white; font-size: 18px; font-weight: bold; }
+	table.tendencias tbody td { padding: 24px 0; }
+		table.tendencias tbody td a { color: white; text-decoration: none; }
+		table.tendencias tfoot td a { color: black; font-weight: bold; text-decoration: none; }
+
+table.resultados { width: 716px; }
+	table.resultados td { text-align: right; }
+	table.resultados td strong { font-weight: bold; }
+	table.resultados td:first-child { text-align: left; }
+	table.resultados thead td, table.resultados tbody td { border-bottom: solid 1px black; }
+	table.resultados thead td, table.resultados tfoot td { padding: 12px 0; }
+	table.resultados thead td { font-size: 18px; font-weight: bold; }
+	table.resultados tbody td { padding: 24px 0; }
+		table.resultados tbody td a { text-decoration: none; }
+		table.resultados tfoot td a { font-weight: bold; text-decoration: none; }
+
+table.filtros_resultado { width: 307px; margin-bottom: 48px; }
+table.filtros_resultado tbody td:first-child { width: 28px; }
+
+/* Tooltip */
+.tooltip { background-color: #414852; margin-left: 304px; padding: 18px 18px 6px; width: 428px; }
+	.tooltip dt { background: url("img/flechita.png") no-repeat; font-size: 13px; padding-left: 8px; }
+		.tooltip dt a { color: white; text-decoration: none; }
+	.tooltip dd { color: #cccccc; font-size: 13px; margin-bottom: 12px; padding-left: 8px; }

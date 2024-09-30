@@ -1,0 +1,144 @@
+<!DOCTYPE html(lang='en')>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Cotizador: Ad | Live Today</title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,400" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="html/assets/css/site.css"/>
+
+</head>
+<body>
+  <div class="content">
+    <form action="submit" id="myForm">
+      <div class="data">
+        <label for="estudio">Nombre del estudio</label>
+        <input type="text" name="estudio" class="estudio"/><br/>
+        <label for="empresa">Empresa</label>
+        <input type="text" name="empresa" class="empresa"/>
+        <label for="solicitante" class="l-solicitante">Solicitante</label>
+        <input type="text" name="solicitante" class="solicitante"/>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo"/>
+        <label for="telefono" class="l-telefono">Tel&eacute;fono</label>
+        <input type="text" name="telefono"/>
+      </div>
+      <div class="columna-uno">
+        <h2>Est&iacute;mulos y n&uacute;mero de entrevistas</h2>
+        <ul class="elegir">
+          <li>Elije el número de estímulos</li>
+          <li>Entrevistas por estímulo</li>
+        </ul>
+        <select name="estimulos" class="estimulos">
+          <option value="uno">1</option>
+          <option value="dos">2</option>
+          <option value="tres">3</option>
+          <option value="cuatro">4</option>
+        </select>
+        <select name="entrevistas" class="entrevistas">
+          <option value="150" class="uno dos tres cuatro">150</option>
+          <option value="200" class="uno dos tres">200</option>
+          <option value="250" class="uno dos">250</option>
+          <option value="300" class="uno dos">300</option>
+          <option value="350" class="uno">350</option>
+          <option value="400" class="uno">400</option>
+          <option value="500" class="uno">500</option>
+        </select>
+        <p class="nota-maximo">*M&aacute;ximo 600 entrevistas por estudio.</p>
+        <h2 class="cobertura">Selecciona tu target y cobertura:</h2>
+        <select name="target" class="consumidores">
+          <option value="general">Población general</option>
+          <option value="agua">Consumidores de agua embotellada</option>
+          <option value="alcohol">Consumidores de Alcohol</option>
+          <option value="analgesicos">Consumidores de analg&eacute;sicos</option>
+          <option value="cafe">Consumidores de caf&eacute;</option>
+          <option value="cerveza">Consumidores de cerveza</option>
+          <option value="dulces">Consumidores de dulces o chocolates </option>
+          <option value="fastfood">Consumidores de Fast Food</option>
+          <option value="gomamascar">Consumidores de Goma de mascar</option>
+          <option value="refresco">Consumidores de refresco</option>
+          <option value="antigripales">Consumidores de antigripales</option>
+          <option value="jugos">Consumidores de Jugos listos para beber</option>
+          <option value="secundaria">Nivel educativo de secundaria en adelante</option>
+          <option value="economicamente">Poblaci&oacute;n Econ&oacute;micamente Activa</option>
+          <option value="decisor">Principal decisor de compra del hogar</option>
+          <option value="autos">Propietarios de Autos</option>
+          <option value="electrodomesticos">Propietarios de Electrodom&eacute;sticos grandes</option>
+          <option value="laptop">Propietarios de Laptop</option>
+          <option value="radio">Radio Escuchas</option>
+          <option value="desodorantes">Usuarios de desodorantes y/o crema corporal</option>
+          <option value="papelbano">Usuarios de Jabon de ba&ntilde;o</option>
+          <option value="pastadental">Usuarios de pasta dental</option>
+          <option value="redessociales">Usuarios de redes sociales</option>
+          <option value="financiero">Usuarios de Servicios Financieros</option>
+          <option value="smartphones">Usuarios de Smatphones</option>
+          <option value="celulares">Usuarios de telefonos celulares</option>
+        </select>
+        <div class="listas">
+          <ul>
+            <li>Edad:</li>
+            <li>
+              <label>
+                <input type="radio" value="1865" name="Edad" checked="checked" class="radioEdad"/><span class="texto-listas">Todas (18-65)</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="1835" name="Edad" class="radioEdad"/><span class="texto-listas">18-35</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="2545" name="Edad" class="radioEdad"/><span class="texto-listas">25-45</span>
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>Nivel:</li>
+            <li>
+              <label>
+                <input type="radio" value="todosniveles" name="Nivel" checked="checked"/><span class="texto-listas">Todos los niveles</span>
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" value="abc+" name="Nivel"/><span class="texto-listas">ABC+</span>
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>Cobertura:</li>
+            <li data-max='600' class="availOptions">
+              <label>
+                <input type="radio" value="nacional" name="Cobertura" checked="checked" class="radioCobertura"/><span class="texto-listas">Nacional</span>
+              </label>
+            </li>
+            <li data-max='450' class="availOptions">
+              <label>
+                <input type="radio" value="dfgdlmty" name="Cobertura" class="radioCobertura"/><span class="texto-listas">DF, GDL y MTY</span>
+              </label>
+            </li>
+            <li data-max='300' class="availOptions">
+              <label>
+                <input type="radio" value="df" name="Cobertura" class="radioCobertura"/><span class="texto-listas">DF</span>
+              </label>
+            </li>
+          </ul>
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+      <div class="columna-dos">
+        <ul class="resultados">
+          <li class="titulo">Entrevistas</li>
+          <li id="displayEntrevistas" class="numero">600</li>
+          <li class="titulo">Total</li>
+          <li id="displayPrice" class="numero">$ 800,000</li>
+          <li class="titulo">Tiempo de entrega</li>
+          <li id="displayTime" class="numero">12 hrs</li>
+        </ul>
+        <div class="botones">
+          <div id="sendData" class="boton-enviar">Enviar por correo</div>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+    </form>
+  </div>
+</body>
