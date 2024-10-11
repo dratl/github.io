@@ -76,6 +76,10 @@ h1::first-letter {
 h2 {
 	text-transform: uppercase;
 	font-size: 1.2em;
+	margin: 0 1em;
+}
+
+section h2 {
 	margin: 0;
 }
 
@@ -217,6 +221,26 @@ aside div figure img:hover {
 aside div figure p {
 	font-size: 0.75em;
 	margin: 0.6em;
+}
+
+aside div img.big-thumb {
+	width: 97%;
+	margin-bottom: 4.5em;
+}
+
+aside ul {
+	margin: 0 0 2.1em;
+	font-size: 0.9em;
+	padding: 0 1em;
+    list-style-type: none;
+}
+
+aside ul li {
+	display: inline;
+}
+
+aside ul li#regresa:last-child {
+	float: right;
 }
 
 /** Pie de página**/
