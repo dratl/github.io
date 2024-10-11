@@ -304,3 +304,58 @@ const functionName = (paramOne, paramTwo) => {} // Two or more Parameters
 | };
 | // Function refactor
 | const squareNum = num => num * num;
+
+
+// Arrays
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+let cities = ['New York', 'Berlin', 'Dubai'];
+cities[0] // Accessing Elements
+
+let groceryList = ['bread', 'tomatoes', 'milk'];
+groceryList[1] = 'avocados'; // Update Elements
+
+const objectives = ['Learn', 'Read', 'Run'];
+console.log(objectives.length); // Number Of Items
+
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+itemTracker.push('item 3', 'item 4'); // Add Items
+
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+const removed = newItemTracker.pop(); // Remove Last Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.shift(); // Remove First Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.unshift('popcorn'); // Add First Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.slice('1,2'); // Copy Items 'bananas', 'pasta'
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.indexOf('bananas'); // Find Item Index [1]
+
+Arrays can be declared with let or const. Arrays are mutable. A variable declared with const cannot be reassigned.
+
+// Arrays and Functions
+
+const flowers = ['peony', 'daffodil', 'marigold'];
+function addFlower(arr) {
+  arr.push('lily');
+}
+addFlower(flowers);
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+// Nested Arrays
+
+const nestedArr = [[1], [2, 3]];
+
+const nestedArr = [[1], [2, 3]];
+console.log(nestedArr[1]); // Output: [2, 3]
+
+const nestedArr = [[1], [2, 3]];
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+
