@@ -117,33 +117,18 @@ a:hover {
 	border-bottom: dotted 1px;
 }
 
-hr.uno {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double dimgray;
-    color: dimgray;
-    text-align: center;
-}
-hr.uno:after {
-    content: "ӿ";
-    font-size: 1.5em;
-    padding: 0 0 0.25em;
-    background: white;
-    position: relative;
-    top: -18px;
-}
+/* Horizontal Rule */
 
-hr.dos {
+hr {
     overflow: visible; /* For IE */
     padding: 0;
     border: none;
     border-top: medium double dimgray;
     color: dimgray;
     text-align: center;
-    margin-bottom: 1.8em;
+    margin-bottom: 3.8em;
 }
-hr.dos:after {
+hr:after {
     display: inline-block;
     position: relative;
     top: -0.7em;
@@ -171,7 +156,7 @@ main {
 main section {
 	width: 45%;
 	background-color: rgba(211, 211, 211, 0.45);
-	margin-bottom: 1.8em;
+	margin-bottom: 3.8em;
 	padding: 2%;
 	border-radius: 0.3em;
 }
@@ -208,7 +193,7 @@ aside div {
 aside div figure {
 	width: 30%;
 	border-bottom: dimgray dotted 2px;
-	margin: 0 0 1.8em;
+	margin: 0 0 3.8em;
 }
 
 aside div figure img {
