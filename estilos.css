@@ -74,7 +74,7 @@ h1::first-letter {
 }
 
 h2 {
-	text-transform: uppercase;
+	text-transform: none;
 	font-size: 1.2em;
 	margin: 0 1em;
 	font-weight: 300;
@@ -94,10 +94,10 @@ h3 {
 h4 {
 	font-size: 1.2em;
 	color: crimson;
-	text-transform: uppercase;
+	text-transform: none;
 	border-bottom: crimson solid 1px;
 	margin: 0;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 p, ul {
@@ -298,6 +298,10 @@ nav ul {
 
 nav ul li {
 	display: inline;
+}
+
+nav ul li.se-encuentra {
+	color: crimson;
 }
 
 nav ul li#hoy:last-child {
