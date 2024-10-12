@@ -289,6 +289,10 @@ nav ul li.se-encuentra {
 	color: crimson;
 }
 
+nav ul li.titulo-seccion {
+	font-size: 1.5em;
+}
+
 nav ul li#hoy:last-child {
 	float: right;
 }
