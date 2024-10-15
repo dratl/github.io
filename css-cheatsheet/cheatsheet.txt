@@ -410,3 +410,6 @@ while (currentCard !== 'spade') {
   currentCard = cards[Math.floor(Math.random() * 4)];
   console.log(currentCard);
 } // Logs card item until 'spades' matches
+
+// Do...While Statements
+
