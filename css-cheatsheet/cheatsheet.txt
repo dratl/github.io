@@ -413,3 +413,49 @@ while (currentCard !== 'spade') {
 
 // Do...While Statements
 
+const cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+do {
+  cupsAdded++;
+  console.log(cupsAdded); // Number of cups added until the while condition is met
+  } while (cupsAdded < cupsOfSugarNeeded);
+
+
+// The break Keyword
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    break;
+  }
+}; // Stops when the if condition is met
+console.log("And if you don't know, now you know.");
+
+// The for...of Loop
+
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+for (const hobby of hobbies) {
+  console.log(`I enjoy ${hobby}.`);
+} // Output "I enjoy (item)" three times
+
+const username = 'joe';
+for (const char of username) {
+  console.log(char); 
+} // Output j, o, e.
+
+const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Terrorbird','Parotia','Kakapo'];
+for (const bird of strangeBirds) {
+  if (bird === 'Basan'){ 
+    break; 
+  }
+  console.log(bird);
+} // Stops at 'Basan' and prints Shoebill, Cockatrice
+
+const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Cow', 'Terrorbird', 'Parotia', 'Kakapo'];
+for (const bird of strangeBirds) {
+  if  (bird === 'Cow'){
+    continue;
+  }
+  console.log(bird);
+} // List all items except 'Cow'
