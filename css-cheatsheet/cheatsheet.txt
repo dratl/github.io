@@ -337,6 +337,9 @@ groceryList.slice('1,2'); // Copy Items 'bananas', 'pasta'
 const groceryList = ['juice', 'bananas', 'pasta'];
 groceryList.indexOf('bananas'); // Find Item Index [1]
 
+const groceryList = ['yo', 'quiero', 'pasta'];
+groceryList.join(' '); // Output 'Yo quiero pasta'
+
 Arrays can be declared with let or const. Arrays are mutable. A variable declared with const cannot be reassigned.
 
 // Arrays and Functions
@@ -359,3 +362,51 @@ const nestedArr = [[1], [2, 3]];
 console.log(nestedArr[1]); // Output: [2, 3]
 console.log(nestedArr[1][0]); // Output: 2
 
+// Loops
+
+for (let counter = 0; counter < 4; counter++){
+  console.log(counter);
+} // Output 0, 1, 2, 3.
+
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+} // Loop backwards. Output 3, 2, 1, 0.
+
+// Looping through Arrays
+
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log('I would love to visit ' + vacationSpots[i]);
+} // Output (3 times): 'I would love to visit (each array item)'
+
+// Nested Loops
+
+const bobsFollowers = ['Pete', 'Pat', 'Pit', 'Pot'];
+const tinasFollowers = ['Harry', 'Pit', 'Pot'];
+const mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+} // Compare the elements in two arrays
+
+console.log(mutualFollowers); // Output 'pit', 'pot'
+
+//  While Loops
+
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+  } // Prints 1, 2, and 3
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+let currentCard;
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+} // Logs card item until 'spades' matches
