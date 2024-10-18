@@ -459,3 +459,238 @@ for (const bird of strangeBirds) {
   }
   console.log(bird);
 } // List all items except 'Cow'
+
+// Object Literals
+
+let spaceship = {
+  'Fuel Type': 'diesel', // quotation marks because it contains a space character.
+  color: 'silver'
+}; // Properties. Key: Value. 
+
+// Object Accessing Properties
+
+let spaceship = {
+  homePlanet: 'Earth',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+let crewCount = spaceship.numCrew;
+let planetArray = spaceship.flightPath;
+
+// Objects Bracket Notation
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth',
+  numCrew: 5
+ };
+let propName =  'Active Mission';
+let isActive = spaceship['Active Mission'];
+console.log(spaceship[propName]); // Return true
+
+// Objects Property Assignment
+
+let spaceship = {
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+spaceship.color = 'glorious gold'; // Changes Property Value
+spaceship.numEngines = 2; // Add New Propertie
+delete spaceship['Secret Mission']; // Delete Propertie
+
+// Object Methods
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+const alienShip = {
+  retreat () { // Object Method
+    console.log(retreatMessage);
+  },
+  takeOff () { // Object Method
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+};
+alienShip.retreat(); // Prints retreatMessage String
+alienShip.takeOff(); // Prints takeOff Method String
+
+// Nested Objects
+
+let spaceship = {
+  passengers: null,
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+}; 
+
+let capFave = spaceship.crew.captain['favorite foods'][0]; // Select 'cookies' from Captain 'favorite foods'
+spaceship.passengers = [{name: 'Perro del Espacio', speciality: 'Mofles'}]; // Add passenger object to passengers property
+const firstPassenger = spaceship.passengers[0]; // Select first object in the passengers Propertie
+
+// Objects Pass By Reference
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+let greenEnergy = objectParam => {
+  objectParam['Fuel Type'] = 'avocado oil';
+} // Changes 'Fuel Type'
+let remotelyDisable = objectParam => {
+  objectParam.disabled = true;
+} // Adds/Change Propertie
+
+greenEnergy(spaceship) // Modifies Propertie from Object
+remotelyDisable(spaceship); // Modifies Propertie from Object
+
+console.log(spaceship); // Returns Object with changes
+
+// Looping Through Objects
+
+let spaceship = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+for (let crewMember in spaceship.crew) {
+  console.log(`${crewMember} : ${spaceship.crew[crewMember].name}`);
+
+} // Returns list with crew title and name for each item
+for (let crewMember in spaceship.crew) {
+  console.log(`${spaceship.crew[crewMember].name} : ${spaceship.crew[crewMember].degree}`);
+} Returns list with crew name and degree for each item
+
+// Objects this Keyword
+
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet() {
+    console.log(this.dietType);
+    console.log(dietType); // Returns ReferenceError
+  }
+};
+goat.diet(); // Output: herbivore
+
+// Objects Getters
+
+const person = {
+  _firstName: 'John',
+  _lastName: 'Doe',
+  get fullName() { // Getter
+    if (this._firstName && this._lastName){
+      return `${this._firstName} ${this._lastName}`;
+    } else {
+      return 'Missing a first name or a last name.';
+    }
+  }
+}
+person.fullName; // 'John Doe'
+
+// Objects Setters
+
+const robot = {
+  _numOfSensors: 15,
+  get numOfSensors(){
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.';
+    }
+  },
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0) {
+      this._numOfSensors = num;
+    } else {
+      return 'Pass in a number that is greater than or equal to 0';
+    }
+  }
+};
+
+robot.numOfSensors = 100; // Assign _numOfSensors to 100
+console.log(robot.numOfSensors); // Prints 100
+
+// Objects Factory Functions
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep () {
+      console.log('Beep Boop');
+    }
+  }
+};
+const tinCan = robotFactory('P-500', true); // New Object Created
+console.log(tinCan.model); // Prints 'P-500'
+tinCan.beep(); // Prints 'Beep Boop'
+
+// Objects Property Value Shorthand
+
+const monsterFactory = (name, age) => {
+  return { 
+    name: name,
+    age: age
+  }
+};
+
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age   
+  }
+};
+
+// Objects Destructured Assignment
+
+const vampire = {
+  name: 'Dracula',
+  residence: 'Transylvania',
+  preferences: {
+    day: 'stay inside',
+    night: 'satisfy appetite'
+  }
+};
+const residence = vampire.residence; // Extract the residence property as a variable
+console.log(residence); // Prints 'Transylvania'
+const { residence } = vampire; // Destructured assignment
+console.log(residence); // Prints 'Transylvania'
+
+// Built-in Object Methods
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+const robotKeys = Object.keys(robot); // Returns an array with the values of robot
+console.log(robotKeys);
+const robotEntries = Object.entries(robot); // Returns an array with the values and keys of robot
+console.log(robotEntries);
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+console.log(newRobot); // Creates a new object from another object and adds new properties
