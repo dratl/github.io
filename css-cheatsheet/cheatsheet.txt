@@ -239,7 +239,6 @@ sayThanks('Cole');
 function greeting (name = 'stranger') {
   console.log(`Hello, ${name}!`)
 }
-
 greeting('Nick') // Output: Hello, Nick!
 greeting() // Output: Hello, stranger!
 
@@ -713,7 +712,7 @@ const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes; // Creates alia
 isTwoPlusTwo(); // Call original function using alias
 console.log(isTwoPlusTwo.name); // Prints original name
 
-// Higher-Order Functions Functions as Parameters
+// Higher-Order Functions - Functions as Parameters
 
 const higherOrderFunc = param => {
   param();
@@ -786,3 +785,81 @@ const newSum = newNumbers.reduce((accumulator, currentValue) => {
 
 console.log(newSum); // Prints 26.
 
+// Reversed Array 
+
+const reverseArray = arr => {
+  let reversed = [];
+  for ( let i = arr.length-1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed
+};
+const sentence = ['sense.','make', 'all', 'will', 'This'];
+console.log(reverseArray(sentence)) 
+// Should print ['This', 'will', 'all', 'make', 'sense.'];
+
+// Print each string in the array
+
+const greetAliens = aliens => {
+  for (let i = 0; i < aliens.length; i++) {
+    console.log(`Oh powerful ${aliens[i]}, we humans offer our unconditional surrender!`); 
+  }
+}
+const aliens = ["Blorgous", "Glamyx", "Wegord", "SpaceKing"];
+greetAliens(aliens);
+
+// Returns a new array with each string prepended
+
+const convertToBaby = animals => {
+  const babyArray = [];
+  for (let i = 0; i < animals.length; i++) {
+    babyArray.push('baby ' + animals[i]);
+  }
+  return babyArray;
+}
+const animals = ['panda', 'turtle', 'giraffe', 'hippo', 'sloth', 'human'];
+console.log(convertToBaby(animals)) 
+
+// Decline everything && Accept everything
+
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+}
+const declineEverything = arr => {
+  arr.forEach(politelyDecline)
+}
+const acceptEverything = arr => {
+  arr.forEach(e => {
+    console.log(`Ok, I guess I will eat some ${e}.`)
+  })
+}
+declineEverything(veggies);
+acceptEverything(veggies);
+
+// Square numbers
+
+const numbers = [2, 7, 9, 171, 52, 33, 14]
+const toSquare = num => num * num
+const squareNums = arr => arr.map(toSquare)
+console.log(squareNums(numbers));
+
+// Return capitalized strings
+
+const shoutGreetings = arr => {
+  const newShoutGreetings = []
+  for ( let i = 0; i < arr.length; i++) {
+    newShoutGreetings.push(arr[i].toUpperCase() + '!')
+  }
+  return newShoutGreetings
+}
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+console.log(shoutGreetings(greetings))
+
+// Sorted in descending order
+
+const sortYears = arr => arr.sort((x,y) => y - x)
+const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922]
+console.log(sortYears(years))
+
+// 
