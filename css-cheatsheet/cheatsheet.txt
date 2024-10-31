@@ -862,4 +862,39 @@ const sortYears = arr => arr.sort((x,y) => y - x)
 const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922]
 console.log(sortYears(years))
 
-// 
+// Returns an array with the items that are present in both arrays
+
+const justCoolStuff = (arr1, arr2) => arr1.filter(item => arr2.includes(item))
+const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
+const myStuff = [ 'rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway']; 
+console.log(justCoolStuff(myStuff, coolStuff))
+
+// returns a boolean value based on whether or not every item in the array pass the test
+
+const isTheDinnerVegan = arr => {
+  if (arr.every(i => i.source === 'plant')) {
+    return true
+  } else {
+    return false
+  }
+}
+
+const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'dairy'}, {name: 'ketchup', source:'plant'}, {name: 'bun', source: 'plant'}, {name: 'dessert twinkies', source:'unknown'}];
+console.log(isTheDinnerVegan(dinner))
+
+// Sorts the array in ascending order based on the average number of teeth that species possesses (numTeeth) .
+
+const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
+
+const sortSpeciesByTeeth = arr => arr.sort((objet1, objet2) => objet1.numTeeth > objet2.numTeeth)
+console.log(sortSpeciesByTeeth(speciesArray))
+
+// Returns the index of the item 
+
+const findMyKeys = arr => {
+  let llaves = arr.findIndex(item => item === 'keys')
+  return llaves
+}
+
+const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
+console.log(findMyKeys(randomStuff))
