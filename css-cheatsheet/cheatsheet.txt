@@ -898,3 +898,65 @@ const findMyKeys = arr => {
 
 const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
 console.log(findMyKeys(randomStuff))
+
+// Takes a number as an argument and returns the factorial of the number.
+
+const factorial = num => {
+  if (num === 0) {
+    return 1
+  }
+  return num * factorial(num - 1)
+}
+console.log(factorial(8))
+
+// Search the string for the two occurrences of the character and return the length between them
+
+const subLength = (str, char) => {
+  let firstIndex = str.indexOf(char);
+  let lastIndex = str.lastIndexOf(char);
+  
+  if (firstIndex === -1 || firstIndex === lastIndex) {
+    return 0;
+  }
+
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+
+  if (count !== 2) {
+    return 0;
+  }
+
+  return lastIndex - firstIndex + 1;
+
+}
+
+console.log(subLength('Saturday', 'a')); // returns 6
+console.log(subLength('summer', 'm')); // returns 2
+console.log(subLength('digitize', 'i')); // returns 0
+console.log(subLength('cheesecake', 'k')); // returns 0
+
+// Return a string with each item separated by a comma except the last two items
+
+const groceries = list => {
+  const items = list.map(obj => obj.item);
+  if (items.length === 0) {
+    return '';
+  }
+  if (items.length === 1) {
+    return items[0];
+  }
+  if (items.length === 2) {
+    return items.join(' and ');
+  }
+
+  return items.slice(0,-1).join(', ') + ' and ' + items[items.length - 1];
+};
+
+console.log(groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] ));
+
+
+Build a drop-down list who do this: when item1 is selected, all divs with the class item1 change their css Propertie 'display:none', to 'display: block', when item2 is selected happens de the same, divs with class item2 changes css propertie from 'display: none' to 'display: block'. When the pages loads, all items should init with the propertie 'display:block'
