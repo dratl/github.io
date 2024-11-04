@@ -958,5 +958,55 @@ const groceries = list => {
 
 console.log(groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] ));
 
+// JS and the Doom - innerHTML
 
-Build a drop-down list who do this: when item1 is selected, all divs with the class item1 change their css Propertie 'display:none', to 'display: block', when item2 is selected happens de the same, divs with class item2 changes css propertie from 'display: none' to 'display: block'. When the pages loads, all items should init with the propertie 'display:block'
+document.body.innerHTML = '<h1>This is now the heading of the body element</h1>'; // Modify de h1 heading
+
+// JS and the Doom - CSS selectors
+
+document.querySelector('h1').innerHTML = 'Most popular Harry Potter characters'; // Select the first 'h1'
+
+document.getElementById('fourth').innerHTML = 'Professor Snape'; // Access the element with an ID
+
+document.getElementsByClassName('slytherin')[0].innerHTML = 'Salazar Slytherin'; // First element with the class name
+
+document.getElementsByTagName('li')[0].innerHTML = 'Dobby'; // First element with the <li> tag
+
+// JS and the Doom - CSS style
+
+document.body.style.backgroundColor = '#201F2E';
+
+document.querySelector('.heading').style.fontFamily = 'Roboto';
+
+// JS and the Doom - .parentNode and .children property
+
+const first = document.body.children[0];
+first.innerHTML = 'BROWN BEARS ARE AWESOME!'; // Selects the first body child (h1)
+
+first.parentNode.style.backgroundColor = 'beige'; // Selects first parentNode (body)
+
+// JS and the Doom - .createElement() - .appendChild()
+
+let newAttraction = document.createElement('li');
+newAttraction.id = 'vespa';
+newAttraction.innerHTML = 'Rent a Vespa';
+
+document.getElementById('italy-attractions').appendChild(newAttraction); // Adds new li element with id and content in the last position from the parentNode
+
+// JS and the Doom - .removeChild() and .hidden propertie
+
+let paragraph = document.querySelector('p');
+document.body.removeChild(paragraph); // Removes the first paragraph from the document body.
+
+document.getElementById('sign').hidden = true; // Hide the element with ID of 'sign'.
+
+// JS and the Doom - onclick event
+
+let element = document.querySelector('button');
+
+function turnButtonRed(){
+  element.style.backgroundColor = 'red';
+  element.style.color = 'white';
+  element.innerHTML = 'Red Button';
+}
+element.onclick = turnButtonRed; // Turns button to red on click.
