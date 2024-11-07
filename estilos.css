@@ -136,6 +136,31 @@ hr:after {
     background: white;
 }
 
+/** Sistema de navegación **/
+
+nav ul {
+	margin: 0 0 0.6em;
+	font-size: 0.9em;
+	padding: 0 1em;
+    list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li.se-encuentra {
+	color: crimson;
+}
+
+nav ul li.titulo-seccion {
+	font-size: 1.5em;
+}
+
+nav ul li#hoy:last-child {
+	float: right;
+}
+
 /** Secciones principales **/
 
 header {
@@ -222,8 +247,6 @@ aside div img.twocols {
 	margin-bottom: 4.5em;
 }
 
-
-
 aside ul {
 	margin: 0 0 2.1em;
 	font-size: 0.9em;
@@ -271,31 +294,9 @@ footer ul li a:hover {
 	color: white;
 }
 
+/* Forma de contacto */
 
-/** Sistema de navegación **/
-
-nav ul {
-	margin: 0 0 0.6em;
-	font-size: 0.9em;
-	padding: 0 1em;
-    list-style-type: none;
-}
-
-nav ul li {
-	display: inline;
-}
-
-nav ul li.se-encuentra {
-	color: crimson;
-}
-
-nav ul li.titulo-seccion {
-	font-size: 1.5em;
-}
-
-nav ul li#hoy:last-child {
-	float: right;
-}
+#forma {}
 
 /** Otras resoluciones de pantalla **/
 

@@ -958,11 +958,11 @@ const groceries = list => {
 
 console.log(groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] ));
 
-// JS and the Doom - innerHTML
+// JS and the Dom - innerHTML
 
 document.body.innerHTML = '<h1>This is now the heading of the body element</h1>'; // Modify de h1 heading
 
-// JS and the Doom - CSS selectors
+// JS and the Dom - CSS selectors
 
 document.querySelector('h1').innerHTML = 'Most popular Harry Potter characters'; // Select the first 'h1'
 
@@ -972,20 +972,20 @@ document.getElementsByClassName('slytherin')[0].innerHTML = 'Salazar Slytherin';
 
 document.getElementsByTagName('li')[0].innerHTML = 'Dobby'; // First element with the <li> tag
 
-// JS and the Doom - CSS style
+// JS and the Dom - CSS style
 
 document.body.style.backgroundColor = '#201F2E';
 
 document.querySelector('.heading').style.fontFamily = 'Roboto';
 
-// JS and the Doom - .parentNode and .children property
+// JS and the Dom - .parentNode and .children property
 
 const first = document.body.children[0];
 first.innerHTML = 'BROWN BEARS ARE AWESOME!'; // Selects the first body child (h1)
 
 first.parentNode.style.backgroundColor = 'beige'; // Selects first parentNode (body)
 
-// JS and the Doom - .createElement() - .appendChild()
+// JS and the Dom - .createElement() - .appendChild()
 
 let newAttraction = document.createElement('li');
 newAttraction.id = 'vespa';
@@ -993,14 +993,14 @@ newAttraction.innerHTML = 'Rent a Vespa';
 
 document.getElementById('italy-attractions').appendChild(newAttraction); // Adds new li element with id and content in the last position from the parentNode
 
-// JS and the Doom - .removeChild() and .hidden propertie
+// JS and the Dom - .removeChild() and .hidden propertie
 
 let paragraph = document.querySelector('p');
 document.body.removeChild(paragraph); // Removes the first paragraph from the document body.
 
 document.getElementById('sign').hidden = true; // Hide the element with ID of 'sign'.
 
-// JS and the Doom - onclick event
+// JS and the Dom - onclick event
 
 let element = document.querySelector('button');
 
@@ -1010,3 +1010,153 @@ function turnButtonRed(){
   element.innerHTML = 'Red Button';
 }
 element.onclick = turnButtonRed; // Turns button to red on click.
+
+// Dom events - Event Handlers
+
+let readMore = document.getElementById('read-more');
+let moreInfo = document.getElementById('more-info');
+function showInfo(){
+  moreInfo.style.display = 'block';
+}
+
+readMore.addEventListener('click', showInfo); // Changes the .display style property of the moreInfo element to 'block'
+
+// Dom events - Adding Event Handlers
+
+let view = document.getElementById('view-button');
+let close = document.getElementById('close-button');
+let codey = document.getElementById('codey');
+
+let open = function() {
+  codey.style.display = 'block';
+  close.style.display = 'block';
+};
+let hide = function() {
+  codey.style.display = 'none';
+  close.style.display = 'none';
+};
+let textChange = function() {
+  view.innerHTML = 'Hello, World!';
+}
+let textReturn = function() {
+  view.innerHTML = 'View';
+}
+
+view.addEventListener('click', open);
+close.addEventListener('click', hide);
+
+view.addEventListener('click', textChange);
+close.addEventListener('click', textReturn); // Show and hide divs, changes text on buttons on Click
+
+// Dom events - Removing Event Handlers
+
+let fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
+  "A fresh start will put you on your way.",
+  "A golden egg of opportunity falls into your lap this month.",
+  "A smile is your personal welcome mat.",
+  "All your hard work will soon pay off."];
+let button = document.getElementById('fortuneButton');
+let fortune = document.getElementById('fortune');
+
+function fortuneSelector(){
+  let randomFortune = Math.floor(Math.random() * fortunes.length);
+  return fortunes[randomFortune];
+}
+function showFortune(){
+  fortune.innerHTML = fortuneSelector();
+  button.innerHTML = "Come back tomorrow!";
+  button.style.cursor = "default";
+  button.removeEventListener('click', showFortune);
+}
+
+button.addEventListener('click', showFortune); // Once clicked the addEventListener is removed
+
+// Dom events - Event Object Properties
+
+let social = document.getElementById('social-media');
+let share = document.getElementById('share-button');
+let text = document.getElementById('text');
+
+let sharePhoto = function(event) {
+  event.target.style.display = 'none';
+  text.innerHTML = 'texto ' + event.timeStamp.toFixed(2);
+}
+
+share.addEventListener('click', sharePhoto) // Button and the text changes and the timeStamp is returned
+
+// Dom events - Event Types
+
+let button = document.getElementById('color-button');
+let mysteryButton = document.getElementById('next-button');
+
+function colorValue() {
+  return Math.floor(Math.random() * 256);
+}
+function colorChange(event){
+  let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
+  event.target.style.backgroundColor = randomColor;
+}
+
+button.addEventListener('click', colorChange); // backgroundColor changes on click.
+mysteryButton.addEventListener('wheel', colorChange); // backgroundColor changes moving the mouse 'wheel'.
+
+// Dom events - Mouse Events
+
+// These variables store the boxes on the side
+let itemOne = document.getElementById('list-item-one');
+let itemTwo = document.getElementById('list-item-two');
+let itemThree = document.getElementById('list-item-three');
+let itemFour = document.getElementById('list-item-four');
+let itemFive = document.getElementById('list-item-five');
+let resetButton = document.getElementById('reset-button');
+
+// This function programs the "Reset" button to return the boxes to their default styles
+let reset = function() {
+  itemOne.style.width = ''
+  itemTwo.style.backgroundColor = ''
+  itemThree.innerHTML = 'The mouse must leave the box to change the text'
+  itemFive.style.display = "none"
+};
+resetButton.onclick = reset;
+
+let increaseWidth = function() {
+  itemOne.style.width = '401px';
+}
+itemOne.addEventListener('mouseover', increaseWidth); // Increases item width on mouseover.
+
+let changeBackground = function() {
+  itemTwo.style.backgroundColor = 'red';
+}
+itemTwo.addEventListener('mouseup', changeBackground); // Change item backgroundColor on mouseup.
+
+let changeText = function() {
+  itemThree.innerHTML = 'The mouse has left the element';
+}
+itemThree.addEventListener('mouseout', changeText); // Change the text on mouseout.
+
+let showItem = function() {
+  itemFive.style.display = 'block';
+}
+itemFour.addEventListener('mousedown', showItem); // Displays div on mousedown.
+
+// // Dom events - Keyboard Events
+
+let ball = document.getElementById('float-circle');
+
+let up = function() {
+  ball.style.bottom = '250px'
+}
+let down = function() {
+  ball.style.bottom = '50px'
+}
+
+document.addEventListener('keydown', up); // Moves item up by 250px
+document.addEventListener('keyup', down); // Moves item up by 50px
+
+// Dom events - Anonymous event handler function
+
+eventTarget.onevent = function() {
+     ...
+}
+
+// /Library/WebServer/Documents
