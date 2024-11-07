@@ -266,7 +266,8 @@ aside ul li#regresa:last-child {
 
 footer {
 	margin: 1.8em 0 0;
-	padding: 1.2em;
+	padding: 0;
+	padding-bottom: 1em;
 	background-color: crimson;
 	text-align: center;
 }
@@ -296,7 +297,32 @@ footer ul li a:hover {
 
 /* Forma de contacto */
 
-#forma {}
+#forma {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+#forma h5 {
+	color: white;
+	font-size: 1.5em;
+	margin: 0;
+	padding: 1.5em 0 0.6em;
+}
+
+#forma input {
+		border-radius: 6px;
+		border: solid 1px gray;
+		width: 24em;
+		padding: 0.6em;
+		margin: 0.9em 0 1.5em;
+}
+
+#forma button {
+	color: white;
+	background-color: dimgray;
+	border-radius: 6px;
+	padding: 0.6em;
+	width: 25em;
+}
 
 /** Otras resoluciones de pantalla **/
 
