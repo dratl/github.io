@@ -64,7 +64,7 @@ h1 {
 	font-size: 5.4em;
 	letter-spacing: -0.012em;
 	text-align: center;
-	font-weight: 300;
+	font-weight: 400;
 	transition: color 450ms ease-out 300ms;
 }
 
@@ -85,7 +85,7 @@ section h2 {
 }
 
 h3 {
-	color: slategray;
+	color: dimgray;
 	font-size: 1.05em;
 	font-weight: 300;
 	font-style: italic;
