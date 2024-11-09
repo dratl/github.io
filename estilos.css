@@ -262,7 +262,20 @@ aside ul li#regresa:last-child {
 	float: right;
 }
 
-/*  */
+/* Navegador portafolio */
+
+aside .portfolio-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+aside .portfolio-nav select {
+	margin: 0 1em;
+}
+
+aside .item1, aside .item2, aside .item3, aside .item4, aside .item5, aside .item6 {
+	display: block;
+}
 
 /** Pie de página**/
 
