@@ -270,7 +270,14 @@ aside .portfolio-nav {
 }
 
 aside .portfolio-nav select {
+	appearance: none;
+	background-color: whitesmoke;
+	border: 1px solid dimgray;
+	border-radius: 0.6em;
+	color: dimgray;
+	cursor: pointer;
 	margin: 0 1em;
+	padding: 0.6em;
 }
 
 aside .item1, aside .item2, aside .item3, aside .item4, aside .item5, aside .item6 {
