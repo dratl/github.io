@@ -1266,7 +1266,7 @@ Allows you to view the commit history of the branch you currently have checked o
 git log 
 
 Allows you to update a commit.
-git commit --amend flag
+git commit --amend
 
 Display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
 git show HEAD
