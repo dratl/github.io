@@ -1243,3 +1243,56 @@ minlength Attribute
 
 min Attribute
 <input type="number" name="rating" min="1" max="10">
+
+// Accessibility
+
+The role attribute is used to communicate information about the role of specific elements.
+
+role="presentation" allows a screen reader to skip markup elements that don’t directly contain useful information.
+
+aria-label and other ARIA properties can be used to help users perceive information that is communicated visually but not through text.
+
+alt attribute should be added to every image element (and all other elements that support it) instead of aria-label.
+
+// Git
+
+Discard changes in the working directory
+git checkout HEAD portrait.txt
+
+Allows you to get back to a clean commit point with a synchronized working tree, and avoid losing your local changes in the process of switching branches or tasks.
+git stash 
+
+Allows you to view the commit history of the branch you currently have checked out.
+git log 
+
+Allows you to update a commit.
+git commit --amend flag
+
+Display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+git show HEAD
+
+Will remove filename from the staging area.
+git reset HEAD filename
+
+Rolls back all changes that have been made to filename since the last commit.
+git checkout HEAD filename
+
+Creates or initializes a new Git project
+git init
+
+Will display the differences between the working directory and the staging area
+git diff filename 
+
+Shows all the commit logs for a project.
+The following is displayed for each commit:
+A 40-character code, called a SHA, that uniquely identifies the commit.
+The commit author
+The date and time of the commit
+The commit message
+git log
+
+Creates a new commit with a log message
+git commit -m "log message here"
+
+Add the filename file to the staging area
+git add filename
