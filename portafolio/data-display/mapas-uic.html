@@ -40,15 +40,39 @@
 		</div>
 	</aside>
     <footer>
-    	<ul>
-    		<li><a href="mailto:xtrujano"><i class="demo-icon icon-correo">&#xe80b;</i> Xico Trujano</a></li>
-    		<li><a href="">W3C Validation</a></li>
-    	</ul>
+		<div id="forma" role="presentation">
+			<h5>Ponte en contacto</h5>
+			<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC266D3F6FE84A45269CB9DB3A36A55EAD1F81A073260415DF3BED3931BE6123FE8AFF5FED9DABC6E3FF971F107453AB0BB2">
+				<div role="presentation">
+					<div role="presentation">
+						<label for="fieldName">Nombre </label><br>
+						<input aria-label="Nombre" id="fieldName" maxlength="200" name="cm-name" placeholder="Nombre" required="">
+					</div>
+					<div role="presentation">
+						<label for="fieldEmail">Dirección de email </label><br>
+						<input autocomplete="Email" aria-label="Dirección de email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tyeykd-tyeykd" placeholder="Dirección de email" required="" type="email">
+					</div>
+				</div>
+				<button class="boton" type="submit">Enviar</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     </footer>
-    <script>
-    function impresoraFalla() {
-    	alert('Tu impresora no esta conectada.');
-    }
-    </script>
+	<script>
+		document.getElementById('selector').addEventListener('change', function() {
+		  var selectedValue = this.value;
+		  var divs = document.querySelectorAll('figure[class^="item"]');
+		  
+		  divs.forEach(function(div) {
+			if (selectedValue === 'init') {
+				div.style.display = 'block';
+			} else if (div.classList.contains(selectedValue)) {
+			  div.style.display = 'block';
+			} else {
+			  div.style.display = 'none';
+			}
+		  });
+		});
+	  </script>
   </body>
 </html>
