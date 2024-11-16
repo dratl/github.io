@@ -1411,4 +1411,22 @@ console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
 
-// 
+// KEY METHODOLOGIES OF UI AND UX DESIGN
+
+The four phases of the double diamond process are: discover, define, develop, and deliver.
+
+Divergent thinking explores many possible solutions and generates novel ideas, and convergent thinking analyzes, filters, and focuses ideas to make decisions.
+
+The product development life cycle (PDLC) is a cross-functional, iterative process that can be viewed as 5 stages: brainstorm, define, design, test, and launch.
+
+Design thinking puts people at the center of every process and encourages designers to set aside assumptions to solve complex, multi-dimensional wicked problems. The five stages of the design thinking process are: empathize, define, ideate, prototype, test, across three core activities: ideation, inspiration, and implementation.
+
+User-centered design (UCD) is an iterative process that puts users at the center of product development and involves them in the design from the beginning. User-centered design processes generally involve the following activities: understand, specify, design, evaluate.
+
+The UX Honeycomb diagram defines “good” UX design as useful, usable, desirable, findable, accessible, credible, and valuable.
+
+The ten usability heuristics are a set of ten general principles for good interaction design.
+
+User research is the systematic study of target users of a product or interface to understand their behaviors, needs, and motivations. User research can happen at every stage of the design process to inform decisions.
+
+Methods of user research include quantitative user research, qualitative user research, attitudinal research, behavioral research, and usability testing.
