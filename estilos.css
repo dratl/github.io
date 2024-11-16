@@ -323,9 +323,10 @@ footer ul li a:hover {
 	margin-bottom: 1.5em;
 	padding-bottom: 1.5em;
 }
-#forma h5 {
+#forma p {
 	color: white;
 	font-size: 1.5em;
+	font-weight: 400;
 	margin: 0;
 	padding: 1.5em 0 0.6em;
 }
