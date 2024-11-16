@@ -19,7 +19,7 @@
 	font-style: normal;
 	font-weight: normal;
 	speak: never;
-	color: crimson;
+	color: #ed143d;
    
 	display: inline-block;
 	text-decoration: inherit;
@@ -69,7 +69,7 @@ h1 {
 }
 
 h1::first-letter {
-	color: crimson;
+	color: #ed143d;
 	font-weight: 400;
 }
 
@@ -93,9 +93,9 @@ h3 {
 
 h4 {
 	font-size: 1.5em;
-	color: crimson;
+	color: #ed143d;
 	text-transform: none;
-	border-bottom: crimson solid 1px;
+	border-bottom: #ed143d solid 1px;
 	margin: 0;
 	font-weight: 300;
 }
@@ -150,7 +150,7 @@ nav ul li {
 }
 
 nav ul li.se-encuentra {
-	color: crimson;
+	color: #ed143d;
 }
 
 nav ul li.titulo-seccion {
@@ -290,7 +290,7 @@ footer {
 	margin: 1.8em 0 0;
 	padding: 0;
 	padding-bottom: 1em;
-	background-color: crimson;
+	background-color: #ed143d;
 	text-align: center;
 }
 
