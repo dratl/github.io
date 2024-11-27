@@ -1411,6 +1411,26 @@ console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
 
+// Modules using ES6 Syntax
+
+<script type="module" src="./secret-messages.js"> </script>
+
+export { toggleHiddenElement, changeToFunkyColor };
+export default randomSquare;
+const resources = { // exporting a default object
+  valueA, 
+  valueB 
+}
+export { resources as default };
+
+import { exportedResourceA, exportedResourceB } from '/path/to/module.js';
+import { exportedResource as newlyNamedResource } from '/path/to/module';
+import importedResources from 'module.js'; // importing default exports
+
+import resources from 'module.js'
+const { valueA, valueB } = resources; // default export is an object
+
+
 // KEY METHODOLOGIES OF UI AND UX DESIGN
 
 The four phases of the double diamond process are: discover, define, develop, and deliver.
