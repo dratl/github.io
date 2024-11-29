@@ -1430,6 +1430,32 @@ import importedResources from 'module.js'; // importing default exports
 import resources from 'module.js'
 const { valueA, valueB } = resources; // default export is an object
 
+// Js Constructing an Error
+
+console.log(Error('User missing name')); // Won't stop our program from running
+
+throw Error('Something wrong happened'); // Stops program from running
+
+// Js The try...catch Statement
+
+try {
+  throw Error('Ya valió');
+} catch (e) {
+  console.log(e);
+} // Logs error message
+
+// Js Handling with try...catch
+
+function capAllElements(arr){
+try {
+	arr.forEach((el, index, array) => {
+    array[index] = el.toUpperCase();
+  });
+  } catch (e) {
+    console.log(e);
+  }
+}
+capAllElements('Incorrect argument');
 
 // KEY METHODOLOGIES OF UI AND UX DESIGN
 
