@@ -90,7 +90,13 @@ class Field {
   }
 }
 
-const myField = new Field(Field.generateField(8, 10, 0.4));
+const myField = new Field([
+  ['*', '░', 'O'],
+  ['░', 'O', '░'],
+  ['░', '^', '░'],
+]);
+
+// const myField = new Field(Field.generateField(8, 10, 0.4));
 let playing = true;
 
 while (playing) {
