@@ -239,7 +239,6 @@ sayThanks('Cole');
 function greeting (name = 'stranger') {
   console.log(`Hello, ${name}!`)
 }
-
 greeting('Nick') // Output: Hello, Nick!
 greeting() // Output: Hello, stranger!
 
@@ -304,3 +303,1176 @@ const functionName = (paramOne, paramTwo) => {} // Two or more Parameters
 | };
 | // Function refactor
 | const squareNum = num => num * num;
+
+
+// Arrays
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+let cities = ['New York', 'Berlin', 'Dubai'];
+cities[0] // Accessing Elements
+
+let groceryList = ['bread', 'tomatoes', 'milk'];
+groceryList[1] = 'avocados'; // Update Elements
+
+const objectives = ['Learn', 'Read', 'Run'];
+console.log(objectives.length); // Number Of Items
+
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+itemTracker.push('item 3', 'item 4'); // Add Items
+
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+const removed = newItemTracker.pop(); // Remove Last Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.shift(); // Remove First Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.unshift('popcorn'); // Add First Item
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.slice('1,2'); // Copy Items 'bananas', 'pasta'
+
+const groceryList = ['juice', 'bananas', 'pasta'];
+groceryList.indexOf('bananas'); // Find Item Index [1]
+
+const groceryList = ['yo', 'quiero', 'pasta'];
+groceryList.join(' '); // Output 'Yo quiero pasta'
+
+Arrays can be declared with let or const. Arrays are mutable. A variable declared with const cannot be reassigned.
+
+// Arrays and Functions
+
+const flowers = ['peony', 'daffodil', 'marigold'];
+function addFlower(arr) {
+  arr.push('lily');
+}
+addFlower(flowers);
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+// Nested Arrays
+
+const nestedArr = [[1], [2, 3]];
+
+const nestedArr = [[1], [2, 3]];
+console.log(nestedArr[1]); // Output: [2, 3]
+
+const nestedArr = [[1], [2, 3]];
+console.log(nestedArr[1]); // Output: [2, 3]
+console.log(nestedArr[1][0]); // Output: 2
+
+// Loops
+
+for (let counter = 0; counter < 4; counter++){
+  console.log(counter);
+} // Output 0, 1, 2, 3.
+
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter);
+} // Loop backwards. Output 3, 2, 1, 0.
+
+for (let counter = 0; counter <= 10; counter++) {
+  if (counter % 2 === 0)
+  console.log(counter); // Prints all the even numbers from 0 to 10
+}
+
+// Looping through Arrays
+
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log('I would love to visit ' + vacationSpots[i]);
+} // Output (3 times): 'I would love to visit (each array item)'
+
+// Nested Loops
+
+const bobsFollowers = ['Pete', 'Pat', 'Pit', 'Pot'];
+const tinasFollowers = ['Harry', 'Pit', 'Pot'];
+const mutualFollowers = [];
+
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+} // Compare the elements in two arrays
+
+console.log(mutualFollowers); // Output 'pit', 'pot'
+
+//  While Loops
+
+let counterTwo = 1;
+while (counterTwo < 4) {
+  console.log(counterTwo);
+  counterTwo++;
+  } // Prints 1, 2, and 3
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+let currentCard;
+while (currentCard !== 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+} // Logs card item until 'spades' matches
+
+// Do...While Statements
+
+const cupsOfSugarNeeded = 3;
+let cupsAdded = 0;
+do {
+  cupsAdded++;
+  console.log(cupsAdded); // Number of cups added until the while condition is met
+  } while (cupsAdded < cupsOfSugarNeeded);
+
+
+// The break Keyword
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]);
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    break;
+  }
+}; // Stops when the if condition is met
+console.log("And if you don't know, now you know.");
+
+// The for...of Loop
+
+const hobbies = ['singing', 'eating', 'quidditch', 'writing'];
+for (const hobby of hobbies) {
+  console.log(`I enjoy ${hobby}.`);
+} // Output "I enjoy (item)" three times
+
+const username = 'joe';
+for (const char of username) {
+  console.log(char); 
+} // Output j, o, e.
+
+const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Terrorbird','Parotia','Kakapo'];
+for (const bird of strangeBirds) {
+  if (bird === 'Basan'){ 
+    break; 
+  }
+  console.log(bird);
+} // Stops at 'Basan' and prints Shoebill, Cockatrice
+
+const strangeBirds = ['Shoebill', 'Cockatrice', 'Basan', 'Cow', 'Terrorbird', 'Parotia', 'Kakapo'];
+for (const bird of strangeBirds) {
+  if  (bird === 'Cow'){
+    continue;
+  }
+  console.log(bird);
+} // List all items except 'Cow'
+
+// Object Literals
+
+let spaceship = {
+  'Fuel Type': 'diesel', // quotation marks because it contains a space character.
+  color: 'silver'
+}; // Properties. Key: Value. 
+
+// Object Accessing Properties
+
+let spaceship = {
+  homePlanet: 'Earth',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+let crewCount = spaceship.numCrew;
+let planetArray = spaceship.flightPath;
+
+// Objects Bracket Notation
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth',
+  numCrew: 5
+ };
+let propName =  'Active Mission';
+let isActive = spaceship['Active Mission'];
+console.log(spaceship[propName]); // Return true
+
+// Objects Property Assignment
+
+let spaceship = {
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+spaceship.color = 'glorious gold'; // Changes Property Value
+spaceship.numEngines = 2; // Add New Propertie
+delete spaceship['Secret Mission']; // Delete Propertie
+
+// Object Methods
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+const alienShip = {
+  retreat () { // Object Method
+    console.log(retreatMessage);
+  },
+  takeOff () { // Object Method
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+};
+alienShip.retreat(); // Prints retreatMessage String
+alienShip.takeOff(); // Prints takeOff Method String
+
+// Nested Objects
+
+let spaceship = {
+  passengers: null,
+  crew: {
+    captain: { 
+      name: 'Sandra', 
+      degree: 'Computer Engineering', 
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+}; 
+
+let capFave = spaceship.crew.captain['favorite foods'][0]; // Select 'cookies' from Captain 'favorite foods'
+spaceship.passengers = [{name: 'Perro del Espacio', speciality: 'Mofles'}]; // Add passenger object to passengers property
+const firstPassenger = spaceship.passengers[0]; // Select first object in the passengers Propertie
+
+// Objects Pass By Reference
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+let greenEnergy = objectParam => {
+  objectParam['Fuel Type'] = 'avocado oil';
+} // Changes 'Fuel Type'
+let remotelyDisable = objectParam => {
+  objectParam.disabled = true;
+} // Adds/Change Propertie
+
+greenEnergy(spaceship) // Modifies Propertie from Object
+remotelyDisable(spaceship); // Modifies Propertie from Object
+
+console.log(spaceship); // Returns Object with changes
+
+// Looping Through Objects
+
+let spaceship = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+for (let crewMember in spaceship.crew) {
+  console.log(`${crewMember} : ${spaceship.crew[crewMember].name}`);
+
+} // Returns list with crew title and name for each item
+for (let crewMember in spaceship.crew) {
+  console.log(`${spaceship.crew[crewMember].name} : ${spaceship.crew[crewMember].degree}`);
+} Returns list with crew name and degree for each item
+
+// Objects this Keyword
+
+const goat = {
+  dietType: 'herbivore',
+  makeSound() {
+    console.log('baaa');
+  },
+  diet() {
+    console.log(this.dietType);
+    console.log(dietType); // Returns ReferenceError
+  }
+};
+goat.diet(); // Output: herbivore
+
+// Objects Getters
+
+const person = {
+  _firstName: 'John',
+  _lastName: 'Doe',
+  get fullName() { // Getter
+    if (this._firstName && this._lastName){
+      return `${this._firstName} ${this._lastName}`;
+    } else {
+      return 'Missing a first name or a last name.';
+    }
+  }
+}
+person.fullName; // 'John Doe'
+
+// Objects Setters
+
+const robot = {
+  _numOfSensors: 15,
+  get numOfSensors(){
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.';
+    }
+  },
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0) {
+      this._numOfSensors = num;
+    } else {
+      return 'Pass in a number that is greater than or equal to 0';
+    }
+  }
+};
+
+robot.numOfSensors = 100; // Assign _numOfSensors to 100
+console.log(robot.numOfSensors); // Prints 100
+
+// Objects Factory Functions
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep () {
+      console.log('Beep Boop');
+    }
+  }
+};
+const tinCan = robotFactory('P-500', true); // New Object Created
+console.log(tinCan.model); // Prints 'P-500'
+tinCan.beep(); // Prints 'Beep Boop'
+
+// Objects Property Value Shorthand
+
+const monsterFactory = (name, age) => {
+  return { 
+    name: name,
+    age: age
+  }
+};
+
+const monsterFactory = (name, age) => {
+  return { 
+    name,
+    age   
+  }
+};
+
+// Objects Destructured Assignment
+
+const vampire = {
+  name: 'Dracula',
+  residence: 'Transylvania',
+  preferences: {
+    day: 'stay inside',
+    night: 'satisfy appetite'
+  }
+};
+const residence = vampire.residence; // Extract the residence property as a variable
+console.log(residence); // Prints 'Transylvania'
+const { residence } = vampire; // Destructured assignment
+console.log(residence); // Prints 'Transylvania'
+
+// Built-in Object Methods
+
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,  
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+const robotKeys = Object.keys(robot); // Returns an array with the values of robot
+console.log(robotKeys);
+const robotEntries = Object.entries(robot); // Returns an array with the values and keys of robot
+console.log(robotEntries);
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+console.log(newRobot); // Creates a new object from another object and adds new properties
+
+// Higher-Order Functions Functions as Data
+
+const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
+  for(let i = 1; i <= 1000000; i++) {
+    if ( (2 + 2) != 4) {
+      console.log('Something has gone very wrong :( ');
+    }
+  }
+};
+const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes; // Creates alias
+isTwoPlusTwo(); // Call original function using alias
+console.log(isTwoPlusTwo.name); // Prints original name
+
+// Higher-Order Functions - Functions as Parameters
+
+const higherOrderFunc = param => {
+  param();
+  return `I just invoked ${param.name} as a callback function!`
+}
+const anotherFunc = () => {
+  return 'I\'m being invoked by the higher-order function!';
+}
+higherOrderFunc(anotherFunc);
+
+// Iterators, the .forEach() Method
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+fruits.forEach(fruit => { 
+  console.log('I want to eat a ' + fruit); // Prints 'I want to eat' on all items
+}); // arrow function
+fruits.forEach(function(fruit) { // Also prints the string on all items
+  console.log(`Yo quiero un ${fruit}`);
+}); // function expression
+
+// Iterators, the .map() Method
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+const secretMessage = animals.map(i => {
+  return i[0];
+})
+console.log(secretMessage.join('')); // Prints new array 'HelloWorld'
+
+const bigNumbers = [100, 200, 300, 400, 500];
+const smallNumbers = bigNumbers.map(i => {
+  return i/100;
+});
+console.log(smallNumbers); // Returns new Array [1,2,3,4,5]
+
+// Iterators, the .filter() Method
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+const smallNumbers = randomNumbers.filter(i => {
+  return i < 250;
+});
+console.log(smallNumbers); // Returns new array [200, 3.14, 7, 13]
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+const longFavoriteWords = favoriteWords.filter(i => {
+  return i.length > 7;
+});
+console.log(longFavoriteWords); // Returns new array ['nostalgia', 'hyperbole', 'esoteric']
+
+// Iterators, the .findIndex() Method
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+const foundAnimal = animals.findIndex(i => {
+  return i === 'elephant';
+});
+console.log(foundAnimal); // Returns the item index 7
+const startsWithS = animals.findIndex(i => {
+  return i[0] === 's';
+});
+console.log(startsWithS); // Returns the item index 3
+
+// Iterators, the .reduce() Method
+
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+},
+10); // Initial value
+
+console.log(newSum); // Prints 26.
+
+// Reversed Array 
+
+const reverseArray = arr => {
+  let reversed = [];
+  for ( let i = arr.length-1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+  return reversed
+};
+const sentence = ['sense.','make', 'all', 'will', 'This'];
+console.log(reverseArray(sentence)) 
+// Should print ['This', 'will', 'all', 'make', 'sense.'];
+
+// Print each string in the array
+
+const greetAliens = aliens => {
+  for (let i = 0; i < aliens.length; i++) {
+    console.log(`Oh powerful ${aliens[i]}, we humans offer our unconditional surrender!`); 
+  }
+}
+const aliens = ["Blorgous", "Glamyx", "Wegord", "SpaceKing"];
+greetAliens(aliens);
+
+// Returns a new array with each string prepended
+
+const convertToBaby = animals => {
+  const babyArray = [];
+  for (let i = 0; i < animals.length; i++) {
+    babyArray.push('baby ' + animals[i]);
+  }
+  return babyArray;
+}
+const animals = ['panda', 'turtle', 'giraffe', 'hippo', 'sloth', 'human'];
+console.log(convertToBaby(animals)) 
+
+// Decline everything && Accept everything
+
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
+const politelyDecline = (veg) => {
+      console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+}
+const declineEverything = arr => {
+  arr.forEach(politelyDecline)
+}
+const acceptEverything = arr => {
+  arr.forEach(e => {
+    console.log(`Ok, I guess I will eat some ${e}.`)
+  })
+}
+declineEverything(veggies);
+acceptEverything(veggies);
+
+// Square numbers
+
+const numbers = [2, 7, 9, 171, 52, 33, 14]
+const toSquare = num => num * num
+const squareNums = arr => arr.map(toSquare)
+console.log(squareNums(numbers));
+
+// Return capitalized strings
+
+const shoutGreetings = arr => {
+  const newShoutGreetings = []
+  for ( let i = 0; i < arr.length; i++) {
+    newShoutGreetings.push(arr[i].toUpperCase() + '!')
+  }
+  return newShoutGreetings
+}
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+console.log(shoutGreetings(greetings))
+
+// Sorted in descending order
+
+const sortYears = arr => arr.sort((x,y) => y - x)
+const years = [1970, 1999, 1951, 1982, 1963, 2011, 2018, 1922]
+console.log(sortYears(years))
+
+// Returns an array with the items that are present in both arrays
+
+const justCoolStuff = (arr1, arr2) => arr1.filter(item => arr2.includes(item))
+const coolStuff = ['gameboys', 'skateboards', 'backwards hats', 'fruit-by-the-foot', 'pogs', 'my room', 'temporary tattoos'];
+const myStuff = [ 'rules', 'fruit-by-the-foot', 'wedgies', 'sweaters', 'skateboards', 'family-night', 'my room', 'braces', 'the information superhighway']; 
+console.log(justCoolStuff(myStuff, coolStuff))
+
+// returns a boolean value based on whether or not every item in the array pass the test
+
+const isTheDinnerVegan = arr => {
+  if (arr.every(i => i.source === 'plant')) {
+    return true
+  } else {
+    return false
+  }
+}
+
+const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'dairy'}, {name: 'ketchup', source:'plant'}, {name: 'bun', source: 'plant'}, {name: 'dessert twinkies', source:'unknown'}];
+console.log(isTheDinnerVegan(dinner))
+
+// Sorts the array in ascending order based on the average number of teeth that species possesses (numTeeth) .
+
+const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
+
+const sortSpeciesByTeeth = arr => arr.sort((objet1, objet2) => objet1.numTeeth > objet2.numTeeth)
+console.log(sortSpeciesByTeeth(speciesArray))
+
+// Returns the index of the item 
+
+const findMyKeys = arr => {
+  let llaves = arr.findIndex(item => item === 'keys')
+  return llaves
+}
+
+const randomStuff = ['credit card', 'screwdriver', 'receipt', 'gum', 'keys', 'used gum', 'plastic spoon'];
+console.log(findMyKeys(randomStuff))
+
+// Takes a number as an argument and returns the factorial of the number.
+
+const factorial = num => {
+  if (num === 0) {
+    return 1
+  }
+  return num * factorial(num - 1)
+}
+console.log(factorial(8))
+
+// Search the string for the two occurrences of the character and return the length between them
+
+const subLength = (str, char) => {
+  let firstIndex = str.indexOf(char);
+  let lastIndex = str.lastIndexOf(char);
+  
+  if (firstIndex === -1 || firstIndex === lastIndex) {
+    return 0;
+  }
+
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+
+  if (count !== 2) {
+    return 0;
+  }
+
+  return lastIndex - firstIndex + 1;
+
+}
+
+console.log(subLength('Saturday', 'a')); // returns 6
+console.log(subLength('summer', 'm')); // returns 2
+console.log(subLength('digitize', 'i')); // returns 0
+console.log(subLength('cheesecake', 'k')); // returns 0
+
+// Return a string with each item separated by a comma except the last two items
+
+const groceries = list => {
+  const items = list.map(obj => obj.item);
+  if (items.length === 0) {
+    return '';
+  }
+  if (items.length === 1) {
+    return items[0];
+  }
+  if (items.length === 2) {
+    return items.join(' and ');
+  }
+
+  return items.slice(0,-1).join(', ') + ' and ' + items[items.length - 1];
+};
+
+console.log(groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] ));
+
+// JS and the Dom - innerHTML
+
+document.body.innerHTML = '<h1>This is now the heading of the body element</h1>'; // Modify de h1 heading
+
+// JS and the Dom - CSS selectors
+
+document.querySelector('h1').innerHTML = 'Most popular Harry Potter characters'; // Select the first 'h1'
+
+document.getElementById('fourth').innerHTML = 'Professor Snape'; // Access the element with an ID
+
+document.getElementsByClassName('slytherin')[0].innerHTML = 'Salazar Slytherin'; // First element with the class name
+
+document.getElementsByTagName('li')[0].innerHTML = 'Dobby'; // First element with the <li> tag
+
+// JS and the Dom - CSS style
+
+document.body.style.backgroundColor = '#201F2E';
+
+document.querySelector('.heading').style.fontFamily = 'Roboto';
+
+// JS and the Dom - .parentNode and .children property
+
+const first = document.body.children[0];
+first.innerHTML = 'BROWN BEARS ARE AWESOME!'; // Selects the first body child (h1)
+
+first.parentNode.style.backgroundColor = 'beige'; // Selects first parentNode (body)
+
+// JS and the Dom - .createElement() - .appendChild()
+
+let newAttraction = document.createElement('li');
+newAttraction.id = 'vespa';
+newAttraction.innerHTML = 'Rent a Vespa';
+
+document.getElementById('italy-attractions').appendChild(newAttraction); // Adds new li element with id and content in the last position from the parentNode
+
+// JS and the Dom - .removeChild() and .hidden propertie
+
+let paragraph = document.querySelector('p');
+document.body.removeChild(paragraph); // Removes the first paragraph from the document body.
+
+document.getElementById('sign').hidden = true; // Hide the element with ID of 'sign'.
+
+// JS and the Dom - onclick event
+
+let element = document.querySelector('button');
+
+function turnButtonRed(){
+  element.style.backgroundColor = 'red';
+  element.style.color = 'white';
+  element.innerHTML = 'Red Button';
+}
+element.onclick = turnButtonRed; // Turns button to red on click.
+
+// Dom events - Event Handlers
+
+let readMore = document.getElementById('read-more');
+let moreInfo = document.getElementById('more-info');
+function showInfo(){
+  moreInfo.style.display = 'block';
+}
+
+readMore.addEventListener('click', showInfo); // Changes the .display style property of the moreInfo element to 'block'
+
+// Dom events - Adding Event Handlers
+
+let view = document.getElementById('view-button');
+let close = document.getElementById('close-button');
+let codey = document.getElementById('codey');
+
+let open = function() {
+  codey.style.display = 'block';
+  close.style.display = 'block';
+};
+let hide = function() {
+  codey.style.display = 'none';
+  close.style.display = 'none';
+};
+let textChange = function() {
+  view.innerHTML = 'Hello, World!';
+}
+let textReturn = function() {
+  view.innerHTML = 'View';
+}
+
+view.addEventListener('click', open);
+close.addEventListener('click', hide);
+
+view.addEventListener('click', textChange);
+close.addEventListener('click', textReturn); // Show and hide divs, changes text on buttons on Click
+
+// Dom events - Removing Event Handlers
+
+let fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
+  "A fresh start will put you on your way.",
+  "A golden egg of opportunity falls into your lap this month.",
+  "A smile is your personal welcome mat.",
+  "All your hard work will soon pay off."];
+let button = document.getElementById('fortuneButton');
+let fortune = document.getElementById('fortune');
+
+function fortuneSelector(){
+  let randomFortune = Math.floor(Math.random() * fortunes.length);
+  return fortunes[randomFortune];
+}
+function showFortune(){
+  fortune.innerHTML = fortuneSelector();
+  button.innerHTML = "Come back tomorrow!";
+  button.style.cursor = "default";
+  button.removeEventListener('click', showFortune);
+}
+
+button.addEventListener('click', showFortune); // Once clicked the addEventListener is removed
+
+// Dom events - Event Object Properties
+
+let social = document.getElementById('social-media');
+let share = document.getElementById('share-button');
+let text = document.getElementById('text');
+
+let sharePhoto = function(event) {
+  event.target.style.display = 'none';
+  text.innerHTML = 'texto ' + event.timeStamp.toFixed(2);
+}
+
+share.addEventListener('click', sharePhoto) // Button and the text changes and the timeStamp is returned
+
+// Dom events - Event Types
+
+let button = document.getElementById('color-button');
+let mysteryButton = document.getElementById('next-button');
+
+function colorValue() {
+  return Math.floor(Math.random() * 256);
+}
+function colorChange(event){
+  let randomColor = 'rgb(' + colorValue() + ',' + colorValue() + ',' + colorValue() + ')';
+  event.target.style.backgroundColor = randomColor;
+}
+
+button.addEventListener('click', colorChange); // backgroundColor changes on click.
+mysteryButton.addEventListener('wheel', colorChange); // backgroundColor changes moving the mouse 'wheel'.
+
+// Dom events - Mouse Events
+
+// These variables store the boxes on the side
+let itemOne = document.getElementById('list-item-one');
+let itemTwo = document.getElementById('list-item-two');
+let itemThree = document.getElementById('list-item-three');
+let itemFour = document.getElementById('list-item-four');
+let itemFive = document.getElementById('list-item-five');
+let resetButton = document.getElementById('reset-button');
+
+// This function programs the "Reset" button to return the boxes to their default styles
+let reset = function() {
+  itemOne.style.width = ''
+  itemTwo.style.backgroundColor = ''
+  itemThree.innerHTML = 'The mouse must leave the box to change the text'
+  itemFive.style.display = "none"
+};
+resetButton.onclick = reset;
+
+let increaseWidth = function() {
+  itemOne.style.width = '401px';
+}
+itemOne.addEventListener('mouseover', increaseWidth); // Increases item width on mouseover.
+
+let changeBackground = function() {
+  itemTwo.style.backgroundColor = 'red';
+}
+itemTwo.addEventListener('mouseup', changeBackground); // Change item backgroundColor on mouseup.
+
+let changeText = function() {
+  itemThree.innerHTML = 'The mouse has left the element';
+}
+itemThree.addEventListener('mouseout', changeText); // Change the text on mouseout.
+
+let showItem = function() {
+  itemFive.style.display = 'block';
+}
+itemFour.addEventListener('mousedown', showItem); // Displays div on mousedown.
+
+// // Dom events - Keyboard Events
+
+let ball = document.getElementById('float-circle');
+
+let up = function() {
+  ball.style.bottom = '250px'
+}
+let down = function() {
+  ball.style.bottom = '50px'
+}
+
+document.addEventListener('keydown', up); // Moves item up by 250px
+document.addEventListener('keyup', down); // Moves item up by 50px
+
+// Dom events - Anonymous event handler function
+
+eventTarget.onevent = function() {
+     ...
+}
+
+// HTML Forms
+
+<input>: Checkbox Type
+<input type="checkbox" name="breakfast" value="bacon">Bacon 🥓<br>
+<input type="checkbox" name="breakfast" value="eggs">Eggs 🍳<br>
+<input type="checkbox" name="breakfast" value="pancakes">Pancakes 🥞<br>
+
+<textarea> Element
+<textarea rows="10" cols="30" name="comment"></textarea>
+
+<form> Element
+<form method="post" action="http://server1">
+</form>
+
+<input>: Number Type
+<input type="number" name="balance" /> 
+
+<input> Element
+<input type="text" name="fname" id="fname"><br>
+<input type="checkbox" name="vehicle" value="Bike"> I own a bike
+
+<input>: Range Type
+<input type="range" name="movie-rating" min="0" max="10" step="0.1">
+
+<select> Element
+<select name="rental-option">
+  <option value="small" selected>Small</option>
+  <option value="family">Family Sedan</option>
+  <option value="lux">Luxury</option>
+</select>
+
+<input>: Text Type
+<input type="text" name="username">
+
+Submitting a Form
+<form action="/index3.html" method="PUT"></form>
+
+<datalist> Element
+<input list="ide">
+<datalist id="ide">
+  <option value="Visual Studio Code" />
+  <option value="Atom" />
+  <option value="Sublime Text" />
+</datalist>
+
+<input>: Radio Button Type
+<input name="delivery_option" type="radio" value="pickup" />
+<input name="delivery_option" type="radio" value="delivery" />
+
+<input> name Attribute
+<input name="username" id="username" />
+<input id="address" />
+
+<label> Element
+<label for="password ">Password:</label>
+<input type="text" id="password" name="password">
+
+<input> Password Type
+<input type="text" name="username" />
+<input type="password" name="password" />
+
+required Attribute
+<input type="password" name="password" required >
+
+max Attribute
+<input type="number" max="20">
+
+maxlength Attribute
+<input type="text" name="tweet" maxlength="140">
+
+pattern Attribute
+<form action="/action_page.php">
+  Country code: 
+  <input type="text" name="country_code" 
+         pattern="[A-Za-z]{3}" 
+         title="Three letter country code">
+  <input type="submit">
+</form>
+
+minlength Attribute
+<input type="text" name="username" minlength="6" />
+
+min Attribute
+<input type="number" name="rating" min="1" max="10">
+
+// Accessibility
+
+The role attribute is used to communicate information about the role of specific elements.
+
+role="presentation" allows a screen reader to skip markup elements that don’t directly contain useful information.
+
+aria-label and other ARIA properties can be used to help users perceive information that is communicated visually but not through text.
+
+alt attribute should be added to every image element (and all other elements that support it) instead of aria-label.
+
+// Git
+
+Discard changes in the working directory
+git checkout HEAD portrait.txt
+
+Allows you to get back to a clean commit point with a synchronized working tree, and avoid losing your local changes in the process of switching branches or tasks.
+git stash 
+
+Allows you to view the commit history of the branch you currently have checked out.
+git log 
+
+Allows you to update a commit.
+git commit --amend
+
+Display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
+git show HEAD
+
+Will remove filename from the staging area.
+git reset HEAD filename
+
+Rolls back all changes that have been made to filename since the last commit.
+git checkout HEAD filename
+
+Creates or initializes a new Git project
+git init
+
+Will display the differences between the working directory and the staging area
+git diff filename 
+
+Shows all the commit logs for a project.
+The following is displayed for each commit:
+A 40-character code, called a SHA, that uniquely identifies the commit.
+The commit author
+The date and time of the commit
+The commit message
+git log
+
+Creates a new commit with a log message
+git commit -m "log message here"
+
+Add the filename file to the staging area
+git add filename
+
+// Classes - Constructor
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+
+// Classes - Instance
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+// Classes - Methods
+
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+   get name() {
+    return this._name;
+   }
+   get department() {
+    return this._department;
+   }
+   get remainingVacationDays() {
+    return this._remainingVacationDays;
+   }
+   takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+   }
+}
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+// Classes - Method Calls 
+
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  get name() {
+    return this._name;
+  }
+  get department() {
+    return this._department;
+  }
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonRomero = new Surgeon('Francisco Romero', 'Cardiovascular');
+const surgeonJackson = new Surgeon('Ruth Jackson', 'Orthopedics');
+
+console.log(surgeonRomero.name);
+surgeonRomero.takeVacationDays(3);
+console.log(surgeonRomero.remainingVacationDays);
+
+// Classes - Inheritance
+
+class HospitalEmployee { // Classes are templates for objects.
+  constructor(name) { // JavaScript calls a constructor method when we create a new instance of a class.
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+  get name() {
+    return this._name;
+  }
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  static generatePassword() {
+    return Math.floor(Math.random() * 10000);
+  } // Static methods are called on the class, but not on instances of the class.
+}
+
+class Nurse extends HospitalEmployee { // We use the extends keyword to create a subclass. 
+  constructor(name, certifications) {
+    super(name); // The super keyword calls the constructor() of a parent class.
+    this._certifications = certifications;
+  } 
+  get certifications() {
+    return this._certifications;
+  }
+  addCertification(newCertification) {
+    this.certifications.push(newCertification);
+  }
+} // Inheritance is when we create a parent class with properties and methods that we can extend to child classes.
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+nurseOlynyk.addCertification('Genetics');
+console.log(nurseOlynyk.certifications);
+
+// Modules using ES6 Syntax
+
+<script type="module" src="./secret-messages.js"> </script>
+
+export { toggleHiddenElement, changeToFunkyColor };
+export default randomSquare;
+const resources = { // exporting a default object
+  valueA, 
+  valueB 
+}
+export { resources as default };
+
+import { exportedResourceA, exportedResourceB } from '/path/to/module.js';
+import { exportedResource as newlyNamedResource } from '/path/to/module';
+import importedResources from 'module.js'; // importing default exports
+
+import resources from 'module.js'
+const { valueA, valueB } = resources; // default export is an object
+
+// Js Constructing an Error
+
+console.log(Error('User missing name')); // Won't stop our program from running
+
+throw Error('Something wrong happened'); // Stops program from running
+
+// Js The try...catch Statement
+
+try {
+  throw Error('Ya valió');
+} catch (e) {
+  console.log(e);
+} // Logs error message
+
+// Js Handling with try...catch
+
+function capAllElements(arr){
+try {
+	arr.forEach((el, index, array) => {
+    array[index] = el.toUpperCase();
+  });
+  } catch (e) {
+    console.log(e);
+  }
+}
+capAllElements('Incorrect argument');
+
+// KEY METHODOLOGIES OF UI AND UX DESIGN
+
+The four phases of the double diamond process are: discover, define, develop, and deliver.
+
+Divergent thinking explores many possible solutions and generates novel ideas, and convergent thinking analyzes, filters, and focuses ideas to make decisions.
+
+The product development life cycle (PDLC) is a cross-functional, iterative process that can be viewed as 5 stages: brainstorm, define, design, test, and launch.
+
+Design thinking puts people at the center of every process and encourages designers to set aside assumptions to solve complex, multi-dimensional wicked problems. The five stages of the design thinking process are: empathize, define, ideate, prototype, test, across three core activities: ideation, inspiration, and implementation.
+
+User-centered design (UCD) is an iterative process that puts users at the center of product development and involves them in the design from the beginning. User-centered design processes generally involve the following activities: understand, specify, design, evaluate.
+
+The UX Honeycomb diagram defines “good” UX design as useful, usable, desirable, findable, accessible, credible, and valuable.
+
+The ten usability heuristics are a set of ten general principles for good interaction design.
+
+User research is the systematic study of target users of a product or interface to understand their behaviors, needs, and motivations. User research can happen at every stage of the design process to inform decisions.
+
+Methods of user research include quantitative user research, qualitative user research, attitudinal research, behavioral research, and usability testing.

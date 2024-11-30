@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Xico Trujano - Estudio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  	<header>
+  		<h1>Diseñador Web &amp; Front-End Engineer</h1>
+        <nav>
+          <ul>
+            <li class="titulo-seccion">Portafolio</li>
+            <li id="hoy">
+				<script>
+					const fecha = new Date();
+					const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+					document.getElementById("hoy").innerHTML = fecha.toLocaleDateString('es-ES', options);
+				</script>
+				<i class="demo-icon icon-fecha">&#xe800;</i>
+			</li>
+          </ul>
+        </nav>
+      <hr class="dos">
+  	</header>
+	<aside>
+		<ul>
+			<li><i class="demo-icon icon-data">&#xe80d;</i> Data Display: Diagramas de flujo.</li>
+			<li id="regresa"><a onclick="history.back()" href="#"><i class="demo-icon icon-atras">&#xe809;</i> Regresar a la página anterior.</a></li>
+		</ul>
+		<div>
+			<img class="big-thumb" src="mapas-uic-grande1.png" alt="Mapa Conceptual - Controversias Orden Familiar">
+			<img class="big-thumb" src="mapas-uic-grande2.png" alt="Mapa Conceptual - Proceso Ordinario Materia Laboral">
+			<img class="big-thumb" src="mapas-uic-grande3.png" alt="Mapa Conceptual - Juicio Hipotecario">
+		</div>
+	</aside>
+    <footer>
+		<div id="forma" role="presentation">
+			<h5>Ponte en contacto</h5>
+			<form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="191722FC90141D02184CB1B62AB3DC266D3F6FE84A45269CB9DB3A36A55EAD1F81A073260415DF3BED3931BE6123FE8AFF5FED9DABC6E3FF971F107453AB0BB2">
+				<div role="presentation">
+					<div role="presentation">
+						<label for="fieldName">Nombre </label><br>
+						<input aria-label="Nombre" id="fieldName" maxlength="200" name="cm-name" placeholder="Nombre" required="">
+					</div>
+					<div role="presentation">
+						<label for="fieldEmail">Dirección de email </label><br>
+						<input autocomplete="Email" aria-label="Dirección de email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-tyeykd-tyeykd" placeholder="Dirección de email" required="" type="email">
+					</div>
+				</div>
+				<button class="boton" type="submit">Enviar</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+    </footer>
+	<script>
+		document.getElementById('selector').addEventListener('change', function() {
+		  var selectedValue = this.value;
+		  var divs = document.querySelectorAll('figure[class^="item"]');
+		  
+		  divs.forEach(function(div) {
+			if (selectedValue === 'init') {
+				div.style.display = 'block';
+			} else if (div.classList.contains(selectedValue)) {
+			  div.style.display = 'block';
+			} else {
+			  div.style.display = 'none';
+			}
+		  });
+		});
+	  </script>
+  </body>
+</html>

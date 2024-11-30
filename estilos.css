@@ -19,7 +19,7 @@
 	font-style: normal;
 	font-weight: normal;
 	speak: never;
-	color: crimson;
+	color: #ed143d;
    
 	display: inline-block;
 	text-decoration: inherit;
@@ -55,54 +55,61 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-image: url(./img/fondo-blanco-natural.png);
+	background-image: url(./img/fondo-blanco-natural1.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
 }
 h1 {
 	padding: 6% 4% 4%;
-	font-size: 3em;
+	font-size: 5.4em;
 	letter-spacing: -0.012em;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 400;
 	transition: color 450ms ease-out 300ms;
 }
 
 h1::first-letter {
-	color: crimson;
-	font-weight: 900;
+	color: #ed143d;
+	font-weight: 400;
 }
 
 h2 {
-	text-transform: uppercase;
-	font-size: 1.2em;
+	text-transform: none;
+	font-size: 1.5em;
+	margin: 0 1em;
+	font-weight: 300;
+}
+
+section h2 {
 	margin: 0;
 }
 
 h3 {
-	color: slategray;
+	color: dimgray;
 	font-size: 1.05em;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: italic;
 }
 
 h4 {
-	font-size: 1.2em;
-	color: crimson;
-	text-transform: uppercase;
-	border-bottom: crimson solid 1px;
+	font-size: 1.5em;
+	color: #ed143d;
+	text-transform: none;
+	border-bottom: #ed143d solid 1px;
 	margin: 0;
+	font-weight: 300;
 }
 
 p, ul {
 	font-size: 0.9em;
+	font-weight: 300;
 }
 
 a {
 	color: dimgray;
 	text-decoration: none;
 	border-bottom: white dotted 1px;
-	transition: border-bottom 450ms ease-out 300ms;
+	transition: border-bottom 450ms ease-out 100ms;
 }
 
 a:hover {
@@ -110,38 +117,48 @@ a:hover {
 	border-bottom: dotted 1px;
 }
 
-hr.uno {
-    overflow: visible; /* For IE */
-    padding: 0;
-    border: none;
-    border-top: medium double dimgray;
-    color: dimgray;
-    text-align: center;
-}
-hr.uno:after {
-    content: "ӿ";
-    font-size: 1.5em;
-    padding: 0 0 0.25em;
-    background: white;
-    position: relative;
-    top: -18px;
-}
+/* Horizontal Rule */
 
-hr.dos {
+hr {
     overflow: visible; /* For IE */
     padding: 0;
     border: none;
     border-top: medium double dimgray;
     color: dimgray;
     text-align: center;
-    margin-bottom: 1.8em;
+    margin-bottom: 3.8em;
 }
-hr.dos:after {
+hr:after {
     display: inline-block;
     position: relative;
     top: -0.7em;
     padding: 0 0.25em;
     background: white;
+}
+
+/** Sistema de navegación **/
+
+nav ul {
+	margin: 0 0 0.6em;
+	font-size: 0.9em;
+	padding: 0 1em;
+    list-style-type: none;
+}
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li.se-encuentra {
+	color: #ed143d;
+}
+
+nav ul li.titulo-seccion {
+	font-size: 1.5em;
+}
+
+nav ul li#hoy:last-child {
+	float: right;
 }
 
 /** Secciones principales **/
@@ -163,8 +180,8 @@ main {
 
 main section {
 	width: 45%;
-	background-color: rgba(255, 255, 255, 0.45);
-	margin-bottom: 1.8em;
+	background-color: rgba(211, 211, 211, 0.45);
+	margin-bottom: 3.8em;
 	padding: 2%;
 	border-radius: 0.3em;
 }
@@ -195,19 +212,20 @@ aside div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: flex-start;
 }
 
 aside div figure {
 	width: 30%;
 	border-bottom: dimgray dotted 2px;
-	margin: 0 0 1.8em;
+	margin: 0 0 3.8em;
 }
 
 aside div figure img {
 	width: 100%;
 	border-radius: 0.3em;
 	opacity: 1;
-	transition: opacity 300ms ease-in 150ms;
+	transition: opacity 300ms ease-in 100ms;
 }
 
 aside div figure img:hover {
@@ -219,12 +237,60 @@ aside div figure p {
 	margin: 0.6em;
 }
 
+aside div img.big-thumb {
+	width: 97%;
+	margin-bottom: 4.5em;
+}
+
+aside div img.twocols {
+	max-width: 48%;
+	margin-bottom: 4.5em;
+}
+
+aside ul {
+	margin: 0 0 2.1em;
+	font-size: 0.9em;
+	padding: 0 1em;
+    list-style-type: none;
+}
+
+aside ul li {
+	display: inline;
+}
+
+aside ul li#regresa:last-child {
+	float: right;
+}
+
+/* Navegador portafolio */
+
+aside .portfolio-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+aside .portfolio-nav select {
+	appearance: none;
+	background-color: whitesmoke;
+	border: 1px solid dimgray;
+	border-radius: 0.6em;
+	color: dimgray;
+	cursor: pointer;
+	margin: 0 1em;
+	padding: 0.6em;
+}
+
+aside .item1, aside .item2, aside .item3, aside .item4, aside .item5, aside .item6 {
+	display: block;
+}
+
 /** Pie de página**/
 
 footer {
 	margin: 1.8em 0 0;
-	padding: 1.2em;
-	background-color: crimson;
+	padding: 0;
+	padding-bottom: 1em;
+	background-color: #ed143d;
 	text-align: center;
 }
 
@@ -251,22 +317,34 @@ footer ul li a:hover {
 	color: white;
 }
 
+/* Forma de contacto */
 
-/** Sistema de navegación **/
-
-nav ul {
-	margin: 0 0 0.6em;
-	font-size: 0.9em;
-	padding: 0 1em;
-    list-style-type: none;
+#forma {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+}
+#forma p {
+	color: white;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 0;
+	padding: 1.5em 0 0.6em;
 }
 
-nav ul li {
-	display: inline;
+#forma input {
+		border-radius: 6px;
+		border: solid 1px gray;
+		width: 24em;
+		padding: 0.6em;
+		margin: 0.9em 0 1.5em;
 }
 
-nav ul li#hoy:last-child {
-	float: right;
+#forma button {
+	color: white;
+	background-color: dimgray;
+	border-radius: 6px;
+	padding: 0.6em;
+	width: 25em;
 }
 
 /** Otras resoluciones de pantalla **/
