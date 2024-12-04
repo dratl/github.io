@@ -64,7 +64,7 @@ class Field {
     const totalHoles = Math.floor(height * width * holePercentage);
     
     // Place the hat
-    const hatPosition = {
+    const hatPosition = {   
       x: Math.floor(Math.random() * width),
       y: Math.floor(Math.random() * height)
     };
