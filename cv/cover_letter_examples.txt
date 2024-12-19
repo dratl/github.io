@@ -1,0 +1,42 @@
+Cover Letter:
+
+
+Hi,
+
+As an experienced Web Designer with over 25 years of expertise, I am excited about the opportunity to contribute to your team. I have a solid background in designing, developing, and maintaining digital assets to deliver a cohesive and functional brand identity. My experience spans websites, mini websites, deliverables, web apps, landing pages, emailing, and more, enabling me to help you achieve your online requirements.
+
+With strong proficiency in hand-coding HTML and CSS, I prioritize web standards, accessibility, and web semantics. My solid understanding of UX/UI principles, inspired by Jared Spool and Jakob Nielsen, ensures that I create user-friendly and effective designs. I am also familiar with integrating rich web applications such as Content Management Systems, Enterprise Resource Planning, Ecommerce, and Mailing.
+
+I invite you to visit my portfolio to see examples of my work, including data displays, wireframing, prototyping, landing pages, emailing, websites, and prints. My portfolio showcases my commitment to web standards, usability, and accessibility.
+
+https://dratl.github.io/github.io/
+
+Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with your needs.
+
+Sincerely,
+Xico Trujano
+
+Hi, I'm Xico Trujano, a Web Designer and FrontEnd Engineer with more than 25 years of experience and my goal has always been to build simple, accessible and visually appealing User Interfaces for Webpages, WebApps, and Mobile.
+
+What's most important is to make the web a better place by making simple to use developments. My hard skills are hand coded HTML and CSS with web standards, accessibility and web semantics, you can take a look at my code at https://dratl.github.io/github.io/
+
+I can design interfaces with every major design app or design directly by coding which Is the way I like the most.
+
+Sincerely,
+Xico Trujano
+
+Share with me one project you're most proud of.
+I was Design Chief at a Mexican StartUp called SocialDecode. We did social TV Ratings and build a system to track social interactions with TV Shows.
+
+I was in charge of designing all the digital assets which included: Websites, Custom Dashboards feeded by our API, Landin Pages, Email Campaigns, Infographics, client deliverables and Mobile Apps.
+
+Altough the StartUp went bankruptcy there's still information on the web and you can see some of my work in my online portfolio.
+
+https://mx.linkedin.com/company/socialdecode
+https://x.com/socialdecode
+https://socialdecode.tumblr.com/
+https://youtu.be/LNFKGkJeBd4?si=2d0pk_rvVtPd5Z0u
+
+Sincerely,
+Xico Trujano
+
