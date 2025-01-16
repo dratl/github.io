@@ -60,7 +60,8 @@ body {
 	background-attachment: fixed;
 }
 h1 {
-	padding: 6% 4% 4%;
+	padding: 28% 4% 8%;
+	margin: 0;
 	font-size: 5.4em;
 	letter-spacing: -0.012em;
 	text-align: center;
@@ -165,8 +166,9 @@ nav ul li#hoy:last-child {
 
 header {
 	max-width: 1000px;
-	margin: 0 auto;
-
+	margin: 3em auto 0;
+	background: url("img/vintage.png") no-repeat top;
+	
 }
 
 main {
@@ -175,7 +177,6 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	
 }
 
 main section {
