@@ -60,7 +60,7 @@ body {
 	background-attachment: fixed;
 }
 h1 {
-	padding: 28% 4% 8%;
+	padding: 4% 4% 28%;
 	margin: 0;
 	font-size: 5.4em;
 	letter-spacing: -0.012em;
@@ -139,6 +139,11 @@ hr:after {
 
 /** Sistema de navegación **/
 
+nav {
+	max-width: 1000px;
+	margin: 3em auto 0;
+}
+
 nav ul {
 	margin: 0 0 0.6em;
 	font-size: 0.9em;
@@ -167,8 +172,7 @@ nav ul li#hoy:last-child {
 header {
 	max-width: 1000px;
 	margin: 3em auto 0;
-	background: url("img/vintage.png") no-repeat top;
-	
+	background: url("img/vintage.png") no-repeat bottom;
 }
 
 main {
