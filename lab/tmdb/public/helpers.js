@@ -30,14 +30,23 @@ const clearCurrentMovie = () => {
     movieTextDiv.innerHTML = '';
 }
 
+// Store a user’s liked and disliked movies and display this list on the page.
+
+let likedCount = 0;
+let dislikedCount = 0;
+
 // After liking a movie, clears the current movie from the screen and gets another random movie
 const likeMovie = () => {
+    likedCount++;
+    document.getElementById('likedMovies').innerHTML = likedCount;
     clearCurrentMovie();
     showRandomMovie();
 };
 
 // After disliking a movie, clears the current movie from the screen and gets another random movie
 const dislikeMovie = () => {
+    dislikedCount++;
+    document.getElementById('dislikedMovies').innerHTML = dislikedCount;
     clearCurrentMovie();
     showRandomMovie();
 };
