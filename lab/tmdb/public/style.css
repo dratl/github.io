@@ -1,6 +1,13 @@
 body {
-    background-color: #7f0920;
+    background-color: #23486A;
     color: #0a0408;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #EFB036;
+    padding: 3em;
 }
 
 #appTitle {
@@ -11,6 +18,17 @@ body {
     font-size: 80px;
 }
 
+#selectGenreForm {
+    background-color: #3B6790;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+#formDiv, #formButtonDiv {
+    width: 25%;
+}
+
 #genreForm, #playBtn {
     text-align: center;
     margin: 0px auto;
@@ -18,7 +36,7 @@ body {
     font-family: 'Fredoka One', sans-serif;
 }
 
-#movieInfo {
+#movieInfo {;
     width:  65%;
     margin:  32px auto;
 }
@@ -74,8 +92,17 @@ select {
 }
 
 #likeOrDislikeBtns {
+    background-color: #4C7B8B;
+    padding: 3em;
     text-align: center;
-    margin: 0px auto;  
+    margin: 0px auto; 
+    justify-content: center;
+}
+
+#likeOrDislikeBtns div {
+    width: 20%;
+    font-family: 'Questrial';
+    font-weight: bold;
 }
 
 #likeBtn, #dislikeBtn {
@@ -84,6 +111,7 @@ select {
     border-radius: 12px;
     border-style: none;
     cursor:  pointer;
+    margin-bottom: 0.3em;
 }
 
 #likeBtn {

@@ -13,21 +13,31 @@
   </head>
   <body>
     <header>
-      <h1 id="appTitle">🍿Film Finder🍿</h1>
+      <h1 id="appTitle">🍿Movie Magic Roulette🍿</h1>
     </header>
-    <form id="genreForm">
-      <label>Choose a genre:</label>
-      <select name="genres" id="genres">
-      </select>
-    </form>
-    <button id="playBtn">Let's Play!</button>
+    <div id="selectGenreForm">
+        <div id="formDiv">
+            <form id="genreForm">
+            <label>Choose a genre:</label>
+            <select name="genres" id="genres">
+            </select>
+            </form>
+        </div>
+        <div id="formButtonDiv">
+            <button id="playBtn">Grabb it!</button>
+        </div>
+    </div>
     <div id="movieInfo">
       <div id="moviePoster"></div>
       <div id="movieText"></div>
     </div>
     <div id="likeOrDislikeBtns" hidden>
-      <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button> Liked movies: <span id="likedMovies">0</span>
-      <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button>Disliked movies: <span id="dislikedMovies">0</span>
+        <div>
+            <button id="likeBtn"><i class="fa-solid fa-thumbs-up"></i></button><br>Liked movies: <span id="likedMovies">0</span>
+        </div>
+        <div>
+            <button id="dislikeBtn"><i class="fa-solid fa-thumbs-down"></i></button><br>Disliked movies: <span id="dislikedMovies">0</span>
+        </div>
     </div>
   </body>
 </html>

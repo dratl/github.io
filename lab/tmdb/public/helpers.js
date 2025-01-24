@@ -20,6 +20,8 @@ const getSelectedGenre = () => {
 const showBtns = () => {
     const btnDiv = document.getElementById('likeOrDislikeBtns');
     btnDiv.removeAttribute('hidden');
+    btnDiv.style.display = 'flex';
+    btnDiv.style.justifyContent = 'center';
 };
 
 // Clear the current movie from the screen
@@ -35,7 +37,7 @@ const clearCurrentMovie = () => {
 let likedCount = 0;
 let dislikedCount = 0;
 
-// After liking a movie, clears the current movie from the screen and gets another random movie
+// After liking a movie, clears the current movie from the screen, gets another random movie and adds one count to the liked movies
 const likeMovie = () => {
     likedCount++;
     document.getElementById('likedMovies').innerHTML = likedCount;
@@ -43,7 +45,7 @@ const likeMovie = () => {
     showRandomMovie();
 };
 
-// After disliking a movie, clears the current movie from the screen and gets another random movie
+// After disliking a movie, clears the current movie from the screen, gets another random movie and adds one count to the disliked movies
 const dislikeMovie = () => {
     dislikedCount++;
     document.getElementById('dislikedMovies').innerHTML = dislikedCount;
