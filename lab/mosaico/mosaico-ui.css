@@ -1,3 +1,54 @@
-h2 {
-    font-size: 2em;
+body {
+    font-size: 1em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mosaico Latest News*/
+
+main #mosaico-latest-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9em;
+}
+
+main #mosaico-latest-news div {
+    background-color: darkseagreen;
+    border-radius: 0.3em;
+    flex-grow: 1;
+    width: 200px;
+}
+
+/* Mosaico Category, Main and latest rows*/
+
+main #mosaico-politics-latest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9em;
+
+}
+
+main #mosaico-politics-latest div {
+    background-color: darkseagreen;
+    border-radius: 0.6em;
+    flex-grow: 1;
+    width: 200px;
 }
