@@ -4,6 +4,24 @@ body {
     padding: 0;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+nav, footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+nav, header, main, footer {
+    padding: 1em;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -15,11 +33,6 @@ nav ul {
 nav ul li {
     margin-right: 10px;
     flex-grow: 1;
-}
-
-header h1 {
-    margin: 0;
-    padding: 0;
 }
 
 /* Mosaico Latest News*/
@@ -39,16 +52,38 @@ main #mosaico-latest-news div {
 
 /* Mosaico Category, Main and latest rows*/
 
-main #mosaico-politics-latest {
+main #mosaico-category-latest {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9em;
-
 }
 
-main #mosaico-politics-latest div {
+#mosaico-category-latest-column-one {
     background-color: darkseagreen;
-    border-radius: 0.6em;
+    border-radius: 0.3em;
+}
+
+#mosaico-category-latest-column-one, #mosaico-category-latest-column-two {
     flex-grow: 1;
+    width: 48%;
+}
+
+#mosaico-category-latest-column-one div, #mosaico-category-latest-column-two div {
+    background-color: darkseagreen;
+    border-radius: 0.3em;
+}
+
+/* Mosaico Opinions */
+
+main #mosaico-articles-latest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.9em;
+}
+
+main #mosaico-articles-latest div {
+    background-color: lightblue;
+    border-radius: 0.3em;
     width: 200px;
 }
