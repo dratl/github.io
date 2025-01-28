@@ -4,9 +4,13 @@ body {
     padding: 0;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 nav, footer {
@@ -23,9 +27,6 @@ nav, header, main, footer {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -50,30 +51,29 @@ main #mosaico-latest-news div {
     width: 200px;
 }
 
-/* Mosaico Category, Main and latest rows*/
+/* Mosaico Category */
 
-main #mosaico-category-latest {
+main .mosaico-category-latest {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9em;
 }
 
-#mosaico-category-latest-column-one {
-    background-color: darkseagreen;
-    border-radius: 0.3em;
-}
-
-#mosaico-category-latest-column-one, #mosaico-category-latest-column-two {
+.mosaico-category-latest-column-one, .mosaico-category-latest-column-two {
     flex-grow: 1;
     width: 48%;
 }
 
-#mosaico-category-latest-column-one div, #mosaico-category-latest-column-two div {
+.mosaico-category-latest-column-one, .mosaico-category-latest-column-two div {
     background-color: darkseagreen;
     border-radius: 0.3em;
 }
 
-/* Mosaico Opinions */
+.mosaico-category-latest-column-two div {
+    margin-bottom: 0.9em;
+}
+
+/* Mosaico Articles */
 
 main #mosaico-articles-latest {
     display: flex;
@@ -85,5 +85,41 @@ main #mosaico-articles-latest {
 main #mosaico-articles-latest div {
     background-color: lightblue;
     border-radius: 0.3em;
+    width: 220px;
+}
+
+/* Mosaico Gallery */
+
+main #mosaico-gallery-latest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9em;
+}
+
+#mosaico-gallery-latest-column-one, #mosaico-gallery-latest-column-three {
+    background-color: lightblue;
+    border-radius: 0.3em;
+    flex-grow: 1;
+    width: 24%;
+}
+
+#mosaico-gallery-latest-column-two {
+    background-color: lightblue;
+    border-radius: 0.3em;
+    flex-grow: 2;
+    width: 48%;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9em;
+    justify-content: space-between;
+}
+
+footer ul {
+    flex-grow: 1;
     width: 200px;
 }
