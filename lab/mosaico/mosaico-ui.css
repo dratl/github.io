@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 header h1 {
     font-size: 3.6em;
     font-weight: 700;
-    margin: 0.6em auto 1.2em;
+    margin: 0.0 auto 0.6em;
 }
 
 header h2 {
@@ -39,12 +39,22 @@ header h2 {
     color: white;
 }
 
+.highlight-white {
+    background: whitesmoke;
+    color: black;
+}
+
 main h2 {
     padding: 1.2em 0 0.6em 0;
 }
 
 main h3 {
     font-size: 1.2em;
+    padding: 0.9em 0.6em 0.3em 0.6em;
+}
+
+main p {
+    padding: 0 0.6em 0.3em;
 }
 
 p, ul {
@@ -82,6 +92,26 @@ nav ul li {
     flex-grow: 1;
 }
 
+/* Mosaico Category main image */
+
+.latest-news-main-image {
+    background-image: url('img/dairy-products.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.latest-politics-main-image {
+    background-image: url('img/mexico-us-relations.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.latest-business-main-image {
+    background-image: url('img/deepseek.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
 /* Mosaico Latest News*/
 
 main #mosaico-latest-news {
@@ -89,6 +119,8 @@ main #mosaico-latest-news {
     flex-wrap: wrap;
     gap: 0.9em;
     justify-content: space-between;
+    border-bottom: 1px solid lightslategrey;
+    padding-bottom: 0.9em;
 }
 
 main #mosaico-latest-news div {
@@ -99,10 +131,19 @@ main #mosaico-latest-news div {
 
 /* Mosaico Category */
 
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+}
+
 main .mosaico-category-latest {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9em;
+    border-bottom: 1px solid lightslategrey;
+    padding-bottom: 0.9em;
 }
 
 .mosaico-category-latest-column-one, .mosaico-category-latest-column-two {
@@ -111,12 +152,12 @@ main .mosaico-category-latest {
 }
 
 .mosaico-category-latest-column-one, .mosaico-category-latest-column-two div {
-    background-color: darkseagreen;
     border-radius: 0.3em;
 }
 
 .mosaico-category-latest-column-two div {
     margin-bottom: 0.9em;
+    border-top: 1px dotted lightslategrey;
 }
 
 /* Mosaico Articles */
@@ -126,6 +167,8 @@ main #mosaico-articles-latest {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 0.9em;
+    border-bottom: 1px solid lightslategrey;
+    padding-bottom: 0.9em;
 }
 
 main #mosaico-articles-latest div {
@@ -140,6 +183,8 @@ main #mosaico-gallery-latest {
     display: flex;
     flex-wrap: wrap;
     gap: 0.9em;
+    border-bottom: 1px solid lightslategrey;
+    padding-bottom: 0.9em;
 }
 
 #mosaico-gallery-latest-column-one, #mosaico-gallery-latest-column-three {
