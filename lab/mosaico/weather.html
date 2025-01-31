@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Weather Forecast</title>
+    <script>
+        async function getWeather() {
+            const apiKey = '5f4204b5e1c30da45f9a0a2b2679138e';
+            const city = 'London';
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+            const data = await response.json();
+            document.getElementById('weather').innerText = `Temperature: ${data.main.temp}°C, Weather: ${data.weather[0].description}`;
+        }
+    </script>
+</head>
+<body onload="getWeather()">
+    <h1>Today's Weather Forecast</h1>
+    <p id="weather">Loading...</p>
+</body>
+</html>
