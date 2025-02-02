@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Today's Weather Forecast</title>
+    <style>
+        img#icon-weather {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
 </head>
 <body onload="getWeather()">
     <h1>Today's Weather Forecast</h1>
-    <p><span  id="weather">Loading... </span> <img id="icon-weather" src="https://openweathermap.org/img/wn/10d@2x.png" alt="Weather"></p>
+
+        <p style="display: flex; align-items: center;">
+            <span id="weather"></span>
+            <span><img id="icon-weather" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather"></span>
+        </p>
+
     <script>
         const weatherImage = document.getElementById('icon-weather');
         async function getWeather() {
             const apiKey = '5f4204b5e1c30da45f9a0a2b2679138e';
-            const city = 'Tokio';
+            const city = 'Mexico City';
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
             const data = await response.json();
             console.log(data);
             if (weatherImage) {
             weatherImage.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
             }
-            document.getElementById('weather').innerText = `Weather Forecast: ${Math.round(data.main.temp)}°C`;
+            document.getElementById('weather').innerText = `${city}: ${Math.round(data.main.temp)}°C`;
         }
     </script>
 </body>
