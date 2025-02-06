@@ -194,6 +194,11 @@ main #mosaico-articles-latest div img {
     padding: 1.2em 0.6em 0 0.6em;
 }
 
+main #mosaico-articles-latest div img.opinion-political-cartoon {
+    float: none;
+    width: 100%;
+}
+
 main #mosaico-articles-latest div h3 {
     font-size: 1.1em;
 }
