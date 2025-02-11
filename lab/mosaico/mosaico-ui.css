@@ -57,6 +57,18 @@ main p {
     padding: 0 0.6em 0.3em;
 }
 
+main a {
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main h3 a {
+    color: black;
+}
+
 p, ul {
     font-family: "Source Sans 3", serif;
     font-optical-sizing: auto;
@@ -135,8 +147,8 @@ main #mosaico-latest-news {
 }
 
 main #mosaico-latest-news div {
-    background-color: darkseagreen;
-    border-radius: 0.3em;
+    margin-bottom: 0.9em;
+    border-top: 1px dotted lightslategrey;
     width: 220px;
 }
 
@@ -214,17 +226,26 @@ main #mosaico-gallery-latest {
 }
 
 #mosaico-gallery-latest-column-one, #mosaico-gallery-latest-column-three {
-    background-color: lightblue;
-    border-radius: 0.3em;
     flex-grow: 1;
     width: 24%;
 }
 
+#mosaico-gallery-latest-column-one div, #mosaico-gallery-latest-column-three div {
+    margin-bottom: 0.9em;
+    border-top: 1px dotted lightslategrey;
+}
+
 #mosaico-gallery-latest-column-two {
-    background-color: lightblue;
     border-radius: 0.3em;
     flex-grow: 2;
     width: 48%;
+}
+
+.latest-gallery-main-image {
+    background-image: url('img/gallery-cochinita-yucatan.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Footer */
