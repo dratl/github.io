@@ -69,6 +69,10 @@ main h3 a {
     color: black;
 }
 
+main p a {
+    color: #3b3b3b;
+}
+
 p, ul {
     font-family: "Source Sans 3", serif;
     font-optical-sizing: auto;
