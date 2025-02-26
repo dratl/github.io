@@ -340,6 +340,14 @@ footer ul li a:hover {
 	padding: 1.5em 0 0.6em;
 }
 
+#forma h5 {
+	color: white;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: 0;
+	padding: 1.5em 0 0.6em;
+}
+
 #forma input {
 		border-radius: 6px;
 		border: solid 1px gray;

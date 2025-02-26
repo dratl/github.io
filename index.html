@@ -1,11 +1,11 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es-ES">
   <head>
 	<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <title>Xico Trujano Web Studio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:title" content="Xico Trujano Web Studio">
-	<meta property="og:description" content="My professional portfolio, a small collection of work and content I've done in the past 25 years.">
+	<meta property="og:title" content="Xicoténcatl Trujano Web Space">
+	<meta property="og:description" content="My professional portfolio, a small collection of work and content.">
 	<meta property="og:image" content="https://dratl.github.io/github.io/img/profile-img.png">
 	<meta property="og:url" content="https://dratl.github.io/github.io/">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,21 +19,16 @@
   	<header>
   		<h1><span class="highlight">Diseñador Web &amp; Front-End Engineer</span></h1>
   	</header>
-	  <nav>
+	<nav>
 		<ul role="presentation">
 		  <li>Usted se encuentra en:</li>
 		  <li class="se-encuentra">página principal</li>
 		  <li id="hoy">
-			  <script>
-				  const fecha = new Date();
-				  const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
-				  document.getElementById("hoy").innerHTML = fecha.toLocaleDateString('es-ES', options);
-			  </script>
 			  <i class="demo-icon icon-fecha">&#xe800;</i>
 		  </li>
 		</ul>
 		<hr>
-	  </nav>
+	</nav>
   	<main>
   		<section>
   			<h2>Diseñador UX/UI-Web, Front-End, usabilidad y accesibilidad web.</h2>
@@ -188,6 +183,11 @@
 			}
 		  });
 		});
-	  </script>
+	</script>
+	<script>
+		const fecha = new Date();
+		const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+		document.getElementById("hoy").innerHTML = fecha.toLocaleDateString('es-ES', options);
+	</script>
   </body>
 </html>
