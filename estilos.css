@@ -118,6 +118,10 @@ a:hover {
 	border-bottom: dotted 1px;
 }
 
+.highlight {
+	background: rgb(255, 255, 255, .50);
+}
+
 /* Horizontal Rule */
 
 hr {
@@ -365,5 +369,19 @@ footer ul li a:hover {
 	aside div figure {
 		width: 48%;
 	}
-	
+	h1 {
+		font-size: 4.2em !important;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	h1 {
+		font-size: 4.6em;
+	}
 }
