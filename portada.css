@@ -1,6 +1,6 @@
 /* Ilustración de portada */
 
-h1 {
+header h1 {
     font-family: "Pirata One", serif;
     font-weight: 400;
     font-style: normal;
@@ -8,13 +8,13 @@ h1 {
     text-align: center;
 }
 
-h1 span:nth-child(1) {
+header h1 span:nth-child(1) {
     text-transform: lowercase;
     font-size: 15em;
     letter-spacing: -0.03em;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(2) {
+header h1 span:nth-child(2) {
     text-transform: lowercase;
     font-size: 12em;
     letter-spacing: -0.17em;
@@ -22,7 +22,7 @@ h1 span:nth-child(2) {
     top: 83px;
     animation: grow 1.5s forwards;
 }
-h1 span:nth-child(3) {
+header h1 span:nth-child(3) {
     text-transform: lowercase;
     font-size: 18em;
     letter-spacing: -0.13em;
@@ -30,7 +30,7 @@ h1 span:nth-child(3) {
     top: 54px;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(4) {
+header h1 span:nth-child(4) {
     text-transform: lowercase;
     font-size: 13em;
     letter-spacing: -0.093em;
@@ -38,7 +38,7 @@ h1 span:nth-child(4) {
     top:31px;
     animation: grow 1.5s forwards;
 }
-h1 span:nth-child(5) {
+header h1 span:nth-child(5) {
     text-transform: lowercase;
     font-size: 18em;
     letter-spacing: -0.07em;
@@ -46,7 +46,7 @@ h1 span:nth-child(5) {
     top:84px;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(6) {
+header h1 span:nth-child(6) {
     text-transform: lowercase;
     font-size: 15em;
     letter-spacing: -0.11em;
@@ -54,7 +54,7 @@ h1 span:nth-child(6) {
     top:42px;
     animation: grow 1.5s forwards;
 }
-h1 span:nth-child(7) {
+header h1 span:nth-child(7) {
     text-transform: lowercase;
     font-size: 16em;
     letter-spacing: -0.10em;
@@ -62,7 +62,7 @@ h1 span:nth-child(7) {
     top:44px;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(8) {
+header h1 span:nth-child(8) {
     text-transform: lowercase;
     font-size: 15em;
     letter-spacing: -0.15em;
@@ -70,7 +70,7 @@ h1 span:nth-child(8) {
     top:52px;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(9) {
+header h1 span:nth-child(9) {
     text-transform: lowercase;
     font-size: 15em;
     letter-spacing: -0.08em;
@@ -78,7 +78,7 @@ h1 span:nth-child(9) {
     top:79px;
     animation: grow 1.5s forwards;
 }
-h1 span:nth-child(10) {
+header h1 span:nth-child(10) {
     text-transform: lowercase;
     font-size: 18em;
     letter-spacing: -0.06em;
@@ -86,27 +86,20 @@ h1 span:nth-child(10) {
     top:95px;
     animation: grow 2s forwards;
 }
-h1 span:nth-child(11) {
+header h1 span:nth-child(11) {
     text-transform: lowercase;
     font-size: 16em;
     position: relative;
     top:60px;
     animation: grow 1.5s forwards;
 }
-h2 {
+header h2 {
     font-family: "Pirata One", serif;
     font-weight: 400;
     text-align: center;
     font-size: 3em;
     color: crimson;
     animation: trans 3s forwards;
-}
-h1 span:nth-child(20) {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    animation: grow 1s forwards;
 }
 
 @keyframes grow {
