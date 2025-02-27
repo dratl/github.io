@@ -10,3 +10,43 @@ body, .montserrat-parrafos {
     font-weight: 600;
     font-style: normal;
   }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    margin-top: 190px;
+  }
+
+  main section {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 60px 12px;
+  }
+
+  main section h3 {
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 12px;
+  }
+
+  main section h4 {
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 12px;
+    margin-top: 30px;
+  }
+
+  main section p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  }
+
+  main section ul li {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
