@@ -50,3 +50,13 @@ body, .montserrat-parrafos {
     font-weight: 300;
     margin-bottom: 12px;
   }
+
+  main section p.iconos-frontend img {
+    width: 36px;
+    margin: 12px;
+  }
+
+  main section p.iconos-experiencia img {
+    width: 72px;
+    margin: 12px;
+  }
