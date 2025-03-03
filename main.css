@@ -12,6 +12,12 @@ body, .montserrat-parrafos {
   }
 
   main {
+    width: 100%;
+  }
+
+/* About me */
+
+  main article.aboutme {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,53 +25,138 @@ body, .montserrat-parrafos {
     margin-top: 190px;
   }
 
-  main section {
+  main article.aboutme section {
     text-align: center;
     color: white;
     max-width: 600px;
     padding: 60px 12px;
   }
 
-  main section h3 {
+  main article.aboutme section h3 {
     font-size: 36px;
     font-weight: 200;
     margin-bottom: 12px;
   }
 
-  main section h4 {
+  main article.aboutme section h4 {
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 12px;
     margin-top: 30px;
   }
 
-  main section p {
+  main article.aboutme section p {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 24px;
   }
 
-  main section ul li {
+  main article.aboutme section ul li {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 12px;
   }
 
-  main section p.iconos-frontend img {
+  main article.aboutme section p.iconos-frontend img {
     width: 36px;
     margin: 12px;
   }
 
-  main section p.iconos-experiencia img {
+  main article.aboutme section p.iconos-experiencia img {
     width: 72px;
     margin: 12px;
   }
 
-  main section p.iconos-experiencia img:hover, main section p.iconos-frontend img:hover {
+  main article.aboutme section p.iconos-experiencia img:hover, main section p.iconos-frontend img:hover {
     animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
+  }
+
+  @media only screen and (max-width: 720px) {
+    main article.aboutme {
+      flex-direction: column;
+    }
+    main article.aboutme section {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  /* Illustration */
+
+  main article.illustration {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  main article.illustration section {
+    min-width: 33.333333%;
+    min-height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:680px 480px;
+    background-position:center;
+    transition:all 0.5s ;
+  }
+  main article.illustration section:hover {
+    background-size:748px 528px;
+    background-position:center;
+  }
+  main article.illustration section:nth-child(1) {
+    background-image: url("img/illustration/yum02.png");
+    background-color: #8cc8ff;
+  }
+  main article.illustration section:nth-child(2) {
+    background-image: url("img/illustration/yum03.png");
+    background-color: #cca900;
+  }
+  main article.illustration section:nth-child(3) {
+    background-image: url("img/illustration/yum01.png");
+    background-color: #00b4ff;
+  }
+  main article.illustration section:nth-child(4) {
+    background-image: url("img/illustration/pasajero74.png");
+    background-color: white;
+  }
+  main article.illustration section:nth-child(5) {
+    background-image: url("img/illustration/volcanico.png");
+    background-color: black;
+  }
+  main article.illustration section:nth-child(6) {
+    background-image: url("img/illustration/corazoncito.png");
+    background-color: white;
+  }
+  main article.illustration section:nth-child(7) {
+    background-image: url("img/illustration/maya01.png");
+    background-color: black;
+  }
+  main article.illustration section:nth-child(8) {
+    background-image: url("img/illustration/mongas.png");
+    background-color: #ffff00;
+  }
+  main article.illustration section:nth-child(9) {
+    background-image: url("img/illustration/maya02.png");
+    background-color: #ebeebc;
+  }
+  @media only screen and (max-width: 920px) {
+    main article.illustration section {
+      min-width: 50%;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    main article.illustration {
+      flex-direction: column;
+    }
+    main article.illustration section {
+      width: 100%;
+      height: 360px;
+    }
   }
 
   /* Animations */
