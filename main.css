@@ -159,6 +159,85 @@ body, .montserrat-parrafos {
     }
   }
 
+  /* Chuck Norris */
+
+  main article.chuck-norris {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FF840B;
+  }
+
+  main article.chuck-norris section {
+    text-align: center;
+    color: white;
+    width: 48%;
+    padding: 60px 12px;
+  }
+
+  main article.chuck-norris section h3 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  main article.chuck-norris section p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 24px;
+    padding: 24px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 8px;
+  }
+
+  main article.chuck-norris section p.credit {
+    font-size: 16px;;
+    background-color: transparent;
+    padding: 12px;
+    margin: 12px;
+  }
+
+  main article.chuck-norris section p.credit a {
+    color: black;
+    font-weight: 600;
+  }
+
+  main article.chuck-norris section p.credit a:hover {
+    color: #333333;
+  }
+
+  main article.chuck-norris section button {
+    background-color: #FD5001;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 0 6px #4d4d4d;
+  }
+
+main article.chuck-norris section button:hover {
+  background-color: #3e8e41;
+}
+
+  main article.chuck-norris section button:active {
+    background-color: #04AA6D;
+    box-shadow: 0 3px #272727;
+    transform: translateY(4px);
+  }
+
+  @media only screen and (max-width: 820px) {
+    main article.chuck-norris {
+      flex-direction: column;
+    }
+    main article.chuck-norris section {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   /* Animations */
 
   @keyframes wiggle {
