@@ -1,0 +1,37 @@
+# Define the API endpoint
+$apiUrl = "https://api.datos.gob.mx/v1/gobmx.facts"
+
+# Use Invoke-RestMethod to retrieve data from the API
+$response = Invoke-RestMethod -Uri $apiUrl -Method Get
+
+# Check if the response contains the 'results' property
+if ($response -and $response.results) {
+    # Loop through each item in the results array
+    foreach ($item in $response.results) {
+        # Display the data for each item
+        Write-Output $item
+    }
+} else {
+    Write-Output "No results found in the API response."
+}
+
+# Saving it to a file
+
+# Define the API endpoint
+$apiUrl = "https://api.datos.gob.mx/v1/api-catalog"
+
+# Use Invoke-RestMethod to retrieve data from the API
+$response = Invoke-RestMethod -Uri $apiUrl -Method Get
+
+# Check if the response contains the 'results' property
+if ($response -and $response.results) {
+    # Convert the response to JSON format
+    $jsonResponse = $response | ConvertTo-Json -Depth 10
+    
+    # Save the JSON response to a file
+    $jsonResponse | Out-File -FilePath "C:\Users\xico\Sites\github.io\api_response.json"
+    
+    Write-Output "Response saved to api_response.json"
+} else {
+    Write-Output "No results found in the API response."
+}

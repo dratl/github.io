@@ -172,6 +172,7 @@ body, .montserrat-parrafos {
     text-align: center;
     color: white;
     width: 48%;
+    max-width: 620px;
     padding: 60px 12px;
   }
 
