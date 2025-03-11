@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Language Selector -->
+<select id="languageSelector">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+</select>
+
+<!-- HTML Content -->
+<h1 id="welcome"></h1>
+<p id="about"></p>
+
+<!-- JavaScript -->
+<script>
+    const translations = {
+        en: {
+            welcome: "Welcome",
+            about: "About Us"
+        },
+        es: {
+            welcome: "Bienvenido",
+            about: "Sobre Nosotros"
+        }
+    };
+
+    const languageSelector = document.getElementById('languageSelector');
+    languageSelector.addEventListener('change', updateLanguage);
+
+    function updateLanguage() {
+        const selectedLanguage = languageSelector.value;
+        document.getElementById('welcome').textContent = translations[selectedLanguage].welcome;
+        document.getElementById('about').textContent = translations[selectedLanguage].about;
+    }
+
+    // Initialize with default language
+    updateLanguage();
+</script>
+
+    
+</body>
+</html>
