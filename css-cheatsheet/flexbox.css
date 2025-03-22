@@ -91,12 +91,16 @@ div.code span.title {
 div.code span svg {
     padding: 4px 12px 0 0;
 }
-div.code span svg path {
+div.code span svg {
     fill: white;
 }
-div.code span svg:hover path {
+div.code span svg:hover {
     fill: #131b23;
     cursor: pointer;
+}
+div.code span svg.copied {
+    color: #d0d0cc;
+    fill:#d0d0cc;
 }
 div.code > div:first-of-type {
     display: flex;
@@ -114,6 +118,29 @@ div.code div pre {
 div.code div pre code {
     margin: 0;
     padding: 0;
+}
+/* Tooltip for the copied code */
+div.code span.title {
+    position: relative; /* Required for positioning the tooltip */
+}
+div.code span.title .tooltip {
+    visibility: hidden;
+    background-color: #131b23;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    top: -30px; /* Position above the SVG */
+    right: 0;
+    z-index: 1;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+div.code span.title .tooltip.show {
+    visibility: visible;
+    opacity: 1;
 }
 /* Flex Container */
 div.display-inline-flex {
