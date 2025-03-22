@@ -253,7 +253,7 @@ main article.chuck-norris section button:hover {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: #d0d0cc;
+    background-color: #2274a5;
     align-items: center;
   }
 
@@ -267,29 +267,26 @@ main article.chuck-norris section button:hover {
   }
 
   main article.cheat-flexbox section.myflexbox {
-    background-color: #9d9d99;
     text-align: left;
   }
 
   main article.cheat-flexbox section.cheatsheet {
-    background-color: #2274a5;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   main article.cheat-flexbox section.nevergo {
-    background-color: #f3c522;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap-reverse;
   }
 
   main article.cheat-flexbox section.magic {
-    background-color: #ed9913;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  main article.cheat-flexbox section h3 {
+  main article.cheat-flexbox section.myflexbox h3 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -299,14 +296,26 @@ main article.chuck-norris section button:hover {
     background-color: white;
   }
 
-  main article.cheat-flexbox section p {
+  main article.cheat-flexbox section.cheatsheet h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 74px;
+    color: #f3c522;
+    background-color: white;
+  }
+
+  main article.cheat-flexbox section.nevergo span {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    color: #2274a5;
+    color: #131B23;
     background-color: white;
+    margin: 12px;
+    width: 20%;
   }
 
   .cheat-flex-button {
@@ -335,9 +344,18 @@ main article.chuck-norris section button:hover {
     main article.cheat-flexbox {
       background-color: #2274a5;
     }
+    main article.cheat-flexbox section.myflexbox {
+      padding-bottom: 29px;
+    }
+    main article.cheat-flexbox section.cheatsheet {
+      background-color: #f3c522;
+    }
+    main article.cheat-flexbox section.nevergo {
+      margin-top: 12px;
+      padding-bottom: 22px;
+    }
     main article.cheat-flexbox section.magic {
-      margin-top: 60px;
-      margin-bottom: 60px;
+      padding-top: 0;
     }
   }
 
