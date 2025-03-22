@@ -1,5 +1,5 @@
 
-body, .montserrat-parrafos {
+body, .montserrat-parrafos, button {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -15,6 +15,13 @@ body, .montserrat-parrafos {
     width: 100%;
   }
 
+  .pixel-font {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
 /* About me */
 
   main article.aboutme {
@@ -236,6 +243,111 @@ main article.chuck-norris section button:hover {
     main article.chuck-norris section {
       width: 100%;
       margin: 0 auto;
+    }
+  }
+
+  /* Flexbox CheatSheet */
+
+  main article.cheat-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #d0d0cc;
+    align-items: center;
+  }
+
+  main article.cheat-flexbox section {
+    text-align: center;
+    color: white;
+    width: 48%;
+    height: 120px;
+    max-width: 600px;
+    padding: 60px 12px;
+  }
+
+  main article.cheat-flexbox section.myflexbox {
+    background-color: #9d9d99;
+    text-align: left;
+  }
+
+  main article.cheat-flexbox section.cheatsheet {
+    background-color: #2274a5;
+  }
+
+  main article.cheat-flexbox section.nevergo {
+    background-color: #f3c522;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main article.cheat-flexbox section.magic {
+    background-color: #ed9913;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main article.cheat-flexbox section h3 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 74px;
+    color: #ed9913;
+    background-color: white;
+  }
+
+  main article.cheat-flexbox section p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #2274a5;
+    background-color: white;
+  }
+
+  .cheat-flex-button {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #131B23;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 16px 16px;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .cheat-flex-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    main article.cheat-flexbox {
+      background-color: #2274a5;
+    }
+    main article.cheat-flexbox section.magic {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    main article.cheat-flexbox section h3 {
+      font-size: 56px;
+    }
+    .cheat-flex-button {
+      padding: 12px 12px;
+      margin: 12px;
     }
   }
 
