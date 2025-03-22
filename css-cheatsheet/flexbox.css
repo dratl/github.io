@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #2274a5;
+    font-size: 13px;
 }
 h1 {
     color: #ed9913;
@@ -35,21 +36,21 @@ h2 {
     margin: 36px 0;
     padding: 12px;
 }
-span {
-    font-size: 1.2em;
-    padding: 3px;
-    display: inline-block;
-    background-color: #ed9913;
-    border-radius: 6px 0 6px 0;
-}
 /* Cases*/
-div.parent {
+div.parent { 
+    font-size: 1.2em;
     background-color: #f3c522;
     height: 258px;
     width: 280px;
     margin: 36px 9px;
     border-radius: 6px;
     border-bottom: 6px solid #ed9913;
+}
+div.parent span {
+    padding: 3px;
+    display: inline-block;
+    background-color: #ed9913;
+    border-radius: 6px 0 6px 0;
 }
 div.parent div.item {
     background-color: #D0D0CC;
@@ -69,6 +70,50 @@ div.parent > div:first-of-type {
     height: 210px;
     margin: 6px;
     padding: 3px;
+}
+div.code {
+    font-size: 1.2em;
+    color: #131B23;
+    background-color: #d0d0cc;
+    height: 258px;
+    width: 280px;
+    margin: 36px 9px;
+    border-radius: 6px;
+    border-bottom: 6px solid #9d9d99;
+}
+div.code span.title {
+    padding: 3px;
+    display: block;
+    text-align: right;
+    background-color: #9d9d99;
+    border-radius: 6px 6px 0 0;
+}
+div.code span svg {
+    padding: 4px 12px 0 0;
+}
+div.code span svg path {
+    fill: white;
+}
+div.code span svg:hover path {
+    fill: #131b23;
+    cursor: pointer;
+}
+div.code > div:first-of-type {
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    height: 196px;
+    margin: 6px;
+    padding: 3px;
+}
+div.code div pre {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+div.code div pre code {
+    margin: 0;
+    padding: 0;
 }
 /* Flex Container */
 div.display-inline-flex {
@@ -178,21 +223,27 @@ div.align-items-auto {
 /* Align Self */
 div.align-self-auto .child {
     align-self: auto;
+    background-color: #9d9d99 !important;
 }
 div.align-self-stretch .child {
     align-self: stretch;
+    background-color: #9d9d99 !important;
 }
 div.align-self-flex-start .child {
     align-self: flex-start;
+    background-color: #9d9d99 !important;
 }
 div.align-self-flex-end .child {
     align-self: flex-end;
+    background-color: #9d9d99 !important;
 }
 div.align-self-center .child {
     align-self: center;
+    background-color: #9d9d99 !important;
 }
 div.align-self-baseline .child {
     align-self: baseline;
+    background-color: #9d9d99 !important;
 }
 /* Align Content */
 div.align-content-flex-start .item, div.align-content-flex-end .item, div.align-content-center .item, div.align-content-space-between .item, div.align-content-space-around .item, div.align-content-stretch .item {
