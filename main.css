@@ -270,11 +270,6 @@ main article.chuck-norris section button:hover {
     text-align: left;
   }
 
-  main article.cheat-flexbox section.cheatsheet {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
   main article.cheat-flexbox section.nevergo {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -282,8 +277,7 @@ main article.chuck-norris section button:hover {
 
   main article.cheat-flexbox section.magic {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
   }
 
   main article.cheat-flexbox section.myflexbox h3 {
@@ -327,6 +321,7 @@ main article.chuck-norris section button:hover {
     cursor: pointer;
     border: 3px solid;
     padding: 16px 16px;
+    margin: 12px;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     position: relative;
     user-select: none;
