@@ -1,5 +1,9 @@
 /* Ilustración de portada */
 
+header {
+    background-color: white;
+}
+
 header h1 {
     font-family: "Pirata One", serif;
     font-weight: 400;

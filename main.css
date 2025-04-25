@@ -18,7 +18,6 @@ body, .montserrat-parrafos, button {
   .pixel-font {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
   }
   
@@ -362,6 +361,93 @@ main article.chuck-norris section button:hover {
       padding: 12px 12px;
       margin: 12px;
     }
+  }
+
+  /* Spotify */
+
+  main article.spotify {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1DB954;
+    align-items: center;
+  }
+
+  main article.spotify section {
+    text-align: center;
+    color: white;
+    width: 98%;
+    max-width: 1200px;
+    padding: 60px 12px;
+  }
+
+  main article.spotify section h4  {
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 53px;
+    padding-bottom: 20px;
+  }
+
+  main article.spotify section span.highlight {
+    color: white;
+    text-shadow: 
+    2px 2px 1px black, 
+    2px -1px 1px black, 
+    -1px 1px 1px black, 
+    -1px -1px 1px black
+  }
+
+  main article.spotify section span.highlight:hover {
+    color: black;
+    text-shadow:none;
+  }
+
+  main article.spotify section span.highlight.c1:hover {
+    background-color: #DDFFF7;
+  }
+  main article.spotify section span.highlight.c2:hover {
+    background-color: #FFA69E;
+  }
+  main article.spotify section span.highlight.c3:hover {
+    background-color: #D8DDEF;
+  }
+
+  main article.spotify section button {
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin: 10px 10px 66px 10px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    box-shadow: 0 6px #4d4d4d;
+  }
+
+  main article.spotify section button:hover {
+    color: white;
+    background-color: #272727;
+  }
+
+  main article.spotify section button:active {
+    background-color: #3e8e41;
+    color: white;
+    box-shadow: 0 3px #4d4d4d;
+    transform: translateY(4px);
+  }
+
+  /* Footer */
+  
+  footer {
+    background-color: black;
+    color: white;
+  }
+
+  footer a {
+    color: gray;
   }
 
   /* Animations */
