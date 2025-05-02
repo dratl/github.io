@@ -11,6 +11,10 @@ body, .montserrat-parrafos, button {
     font-style: normal;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   main {
     width: 100%;
   }
@@ -27,7 +31,7 @@ body, .montserrat-parrafos, button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: black;
+    background-color: #121212;
     margin-top: 190px;
   }
 
@@ -193,7 +197,7 @@ body, .montserrat-parrafos, button {
     margin: 24px;
     padding: 24px;
     background-color: aliceblue;
-    color: black;
+    color: #121212;
     border-radius: 8px;
   }
 
@@ -205,7 +209,7 @@ body, .montserrat-parrafos, button {
   }
 
   main article.chuck-norris section p.credit a {
-    color: black;
+    color: #121212;
     font-weight: 600;
   }
 
@@ -383,7 +387,7 @@ main article.chuck-norris section button:hover {
   }
 
   main article.spotify section h4  {
-    color: black;
+    color: #121212;
     font-size: 48px;
     font-weight: 700;
     padding-top: 53px;
@@ -393,14 +397,14 @@ main article.chuck-norris section button:hover {
   main article.spotify section span.highlight {
     color: white;
     text-shadow: 
-    2px 2px 1px black, 
-    2px -1px 1px black, 
-    -1px 1px 1px black, 
-    -1px -1px 1px black
+    2px 2px 1px #121212, 
+    2px -1px 1px #121212, 
+    -1px 1px 1px #121212, 
+    -1px -1px 1px #121212
   }
 
   main article.spotify section span.highlight:hover {
-    color: black;
+    color: #121212;
     text-shadow:none;
   }
 
@@ -429,7 +433,7 @@ main article.chuck-norris section button:hover {
 
   main article.spotify section button:hover {
     color: white;
-    background-color: #272727;
+    background-color: #444444;
   }
 
   main article.spotify section button:active {
@@ -442,13 +446,110 @@ main article.chuck-norris section button:hover {
   /* Footer */
   
   footer {
-    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #121212;
+  }
+
+  footer section {
+    text-align: left;
     color: white;
+    width: 48%;
+    max-width: 600px;
+    padding: 60px 12px;
+  }
+
+  footer section h3 {
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 33px;
+    color: white;
+    padding: 12px;
+    margin: 12px 0;
+  }
+
+  footer section p, footer section form label {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 12px 0;
+    padding: 12px;
+  }
+
+  footer section.social p:first-of-type {
+    padding-bottom: 0;
+  }
+
+  footer form label {
+    width: 120px;
+    display: inline-block;
+  }
+
+  footer form input {
+    width: 60%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+  }
+
+  footer form button {
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    margin: 12px 12px 12px 147px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 0 6px #4d4d4d;
+    width: 40%;
+  }
+
+  footer form button:hover {
+    color: white;
+    background-color: #1db954;
+  }
+
+  footer form button:active {
+    background-color: crimson;
+    color: white;
+    box-shadow: 0 3px #4d4d4d;
+    transform: translateY(4px);
   }
 
   footer a {
-    color: gray;
+    color: white;
+    text-decoration: underline;
+    font-weight: 400;
   }
+
+  footer section.social a:hover {
+    color: crimson;
+  }
+
+  footer svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-right: 12px;
+  }
+
+  footer section.social p.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  footer section.social p.social-icons a {
+    display: flex; 
+    align-items: center; 
+  }
+
+
 
   /* Animations */
 
