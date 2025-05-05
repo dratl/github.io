@@ -1,12 +1,11 @@
-# Sitio personal
+# Sitio Web Personal
 
 ## Objetivos
 
-1. Este proyecto es mi sitio personal en la web, un espacio donde mostrar mis proyectos y mi experiencia en el campo de la Internet.
+Este proyecto es mi espacio digital, diseñado para mostrar mis trabajos, proyectos y experiencia en el ámbito de Internet.
 
-2. El sitio esta escrito en HTML, CSS y Js con páginas estáticas, pues al usar el espacio de GitHub Pages, no tenemos acceso a bases de datos.
+El sitio está desarrollado con **HTML**, **CSS** y **JavaScript**, utilizando una estructura de páginas estáticas optimizada para su alojamiento en **GitHub Pages**, lo que elimina la necesidad de bases de datos.
 
-3. Además de la parte visual, el código esta completamente escrito a mano sin ayuda de aplicaciones extras. HanCrafted Code.
+Más allá de su diseño visual, el código ha sido escrito completamente a mano, sin herramientas automáticas ni editores avanzados, asegurando un enfoque artesanal en cada línea de programación.
 
-2025
-
+**Año de creación:** 2025
