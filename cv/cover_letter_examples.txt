@@ -46,3 +46,38 @@ Xico Trujano
 Opening Statement: 
 
 As an experienced Web Designer with over 25 years in the field, I am inspired by the dynamic and ever-evolving nature of the web development industry. Joining your team presents the opportunity to merge my passion for creating meaningful digital experiences with your mission of driving online excellence.
+
+Hola, soy Xico, un apasionado del diseño web con más de 20 años de experiencia y un fuerte dominio de HTML y CSS. Me encanta crear sitios que no solo sean visualmente atractivos, sino también accesibles, semánticos y alineados con los mejores estándares web. Mi enfoque en UX/UI, inspirado por expertos como Jared Spool y Jakob Nielsen, me permite diseñar experiencias digitales intuitivas y eficaces.
+
+Diseñador web con una sólida base en HTML, CSS, principios de diseño responsivo, SEO técnico, diseño móvil y estándares de accesibilidad web. Atención a los detalles con dominio de varios programas y herramientas de diseño y programación. Amplios conocimientos de UI/UX y más de 20 años de experiencia en el diseño, desarrollo y mantenimiento de productos web visualmente atractivos y fáciles de usar. Deseoso de trabajar con equipos de diseño y desarrollo para contribuir y ofrecer soluciones web de alta calidad.
+
+Codecademy: Frontend Engineering Certification.
+UIE with Jared Spool: User Interface Engineering.
+
+// Delivering code
+
+Hi <NAME>,
+
+I hope you had a great week! I had fun diving back into React with this challenge. Here is my Github repo and I’ve included my README below. Please let me know if you have any questions.
+
+Just so you know, I’m interviewing with a few other companies and I just received an offer yesterday — I need to get back to them next week. Of course, I am excited about the opportunity at <COMPANY NAME>, so I’m looking forward to hearing from you!
+
+Thanks,<NAME>
+
+//
+
+Mi nombre es Xico Trujano y me encantaría tener la oportunidad de colaborar con ustedes. Soy diseñador web con más de 20 años de experiencia en la creación, desarrollo y mantenimiento de productos digitales visualmente atractivos, funcionales y centrados en el usuario.
+
+Cuento con una sólida base técnica en HTML, CSS, diseño responsivo, SEO técnico, diseño móvil y estándares de accesibilidad web. Me enfoco en los detalles y domino diversas herramientas de diseño y desarrollo, lo que me permite integrarme fácilmente con equipos multidisciplinarios y contribuir con soluciones web de alta calidad, tanto en experiencia de usuario como en rendimiento.
+
+Adjunto mi currículum y portafolio para su consideración. Estoy entusiasmado por la posibilidad de conversar con ustedes y conocer cómo puedo aportar al equipo.
+
+Muchas gracias por su atención.
+
+Saludos cordiales, Xico Trujano
+
+//
+
+UX/UI designer who also codes
+
+//
