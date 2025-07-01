@@ -126,6 +126,166 @@ header h2 {
     }
     to {
         color: auto;
-        overflow: visible;;
+        overflow: visible;
     }
 }
+
+@media screen and (max-width: 780px) {
+
+header h1 {
+    padding: 2% auto;
+}
+header h1 span:nth-child(1) {
+    text-transform: lowercase;
+    font-size: 10em;
+    letter-spacing: -0.03em;
+}
+header h1 span:nth-child(2) {
+    text-transform: lowercase;
+    font-size: 8em;
+    letter-spacing: -0.17em;
+    position: relative;
+    top: 52px;
+}
+header h1 span:nth-child(3) {
+    text-transform: lowercase;
+    font-size: 12em;
+    letter-spacing: -0.13em;
+    position: relative;
+    top: 54px;
+}
+header h1 span:nth-child(4) {
+    text-transform: lowercase;
+    font-size: 9em;
+    letter-spacing: -0.093em;
+    position: relative;
+    top:31px;
+}
+header h1 span:nth-child(5) {
+    text-transform: lowercase;
+    font-size: 12em;
+    letter-spacing: -0.07em;
+    position: relative;
+    top:71px;
+}
+header h1 span:nth-child(6) {
+    text-transform: lowercase;
+    font-size: 10em;
+    letter-spacing: -0.11em;
+    position: relative;
+    top:42px;
+}
+header h1 span:nth-child(7) {
+    text-transform: lowercase;
+    font-size: 11em;
+    letter-spacing: -0.10em;
+    position: relative;
+    top:44px;
+}
+header h1 span:nth-child(8) {
+    text-transform: lowercase;
+    font-size: 10em;
+    letter-spacing: -0.15em;
+    position: relative;
+    top:52px;
+}
+header h1 span:nth-child(9) {
+    text-transform: lowercase;
+    font-size: 10em;
+    letter-spacing: -0.08em;
+    position: relative;
+    top:73px;
+}
+header h1 span:nth-child(10) {
+    text-transform: lowercase;
+    font-size: 12em;
+    letter-spacing: -0.06em;
+    position: relative;
+    top:95px;
+}
+header h1 span:nth-child(11) {
+    text-transform: lowercase;
+    font-size: 11em;
+    position: relative;
+    top:60px;
+} }
+
+@media screen and (max-width: 500px) {
+
+header h1 {
+    padding: 24px auto;
+}
+header h1 span:nth-child(1) {
+    text-transform: lowercase;
+    font-size: 7em;
+    letter-spacing: -0.03em;
+}
+header h1 span:nth-child(2) {
+    text-transform: lowercase;
+    font-size: 5em;
+    letter-spacing: -0.17em;
+    position: relative;
+    top: 32px;
+}
+header h1 span:nth-child(3) {
+    text-transform: lowercase;
+    font-size: 8em;
+    letter-spacing: -0.13em;
+    position: relative;
+    top: 34px;
+}
+header h1 span:nth-child(4) {
+    text-transform: lowercase;
+    font-size: 6em;
+    letter-spacing: -0.093em;
+    position: relative;
+    top:22px;
+}
+header h1 span:nth-child(5) {
+    text-transform: lowercase;
+    font-size: 8em;
+    letter-spacing: -0.07em;
+    position: relative;
+    top:46px;
+}
+header h1 span:nth-child(6) {
+    text-transform: lowercase;
+    font-size: 7em;
+    letter-spacing: -0.11em;
+    position: relative;
+    top:22px;
+}
+header h1 span:nth-child(7) {
+    text-transform: lowercase;
+    font-size: 8em;
+    letter-spacing: -0.10em;
+    position: relative;
+    top:34px;
+}
+header h1 span:nth-child(8) {
+    text-transform: lowercase;
+    font-size: 7em;
+    letter-spacing: -0.15em;
+    position: relative;
+    top:52px;
+}
+header h1 span:nth-child(9) {
+    text-transform: lowercase;
+    font-size: 7em;
+    letter-spacing: -0.08em;
+    position: relative;
+    top:43px;
+}
+header h1 span:nth-child(10) {
+    text-transform: lowercase;
+    font-size: 8em;
+    letter-spacing: -0.06em;
+    position: relative;
+    top:55px;
+}
+header h1 span:nth-child(11) {
+    text-transform: lowercase;
+    font-size: 8em;
+    position: relative;
+    top:35px;
+} }

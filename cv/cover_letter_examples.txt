@@ -2,25 +2,23 @@ Cover Letter:
 
 Hi,
 
-As an experienced Web Designer with over 25 years of expertise, I am excited about the opportunity to contribute to your team. I have a solid background in designing, developing, and maintaining digital assets to deliver a cohesive and functional brand identity. My experience spans websites, mini websites, deliverables, web apps, landing pages, emailing, and more, enabling me to help you achieve your online requirements.
+As an experienced Web Designer with over 25 years of expertise, I am excited about the opportunity to contribute to your team. I have a solid background in designing, developing, and maintaining digital assets to deliver a cohesive and functional brand identity. My experience spans websites, mobile apps, deliverables, web apps, landing pages, emailing, and more, enabling me to help you achieve your online requirements.
 
-With strong proficiency in hand-coding HTML and CSS, I prioritize web standards, accessibility, and web semantics. My solid understanding of UX/UI principles, inspired by Jared Spool and Jakob Nielsen, ensures that I create user-friendly and effective designs. I am also familiar with integrating rich web applications such as Content Management Systems, Enterprise Resource Planning, Ecommerce, and Mailing.
-
-I invite you to visit my portfolio to see examples of my work, including data displays, wireframing, prototyping, landing pages, emailing, websites, and prints. My portfolio showcases my commitment to web standards, usability, and accessibility.
-
-https://dratl.github.io/github.io/
+With strong proficiency in hand-coding HTML and CSS, I prioritize web standards, accessibility, and web semantics. My solid understanding of UX/UI principles, inspired by Jared Spool and Jakob Nielsen, ensures that I create user-friendly and effective designs. I am also familiar with integrating rich web applications such as Content Management Systems, Enterprise Resource Planning, Ecommerce, Mailing and more.
 
 Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with your needs.
+
+You can take a look at my playground at https://dratl.github.io/github.io/
 
 Sincerely,
 Xico Trujano
 
 
-Hi, I'm Xico Trujano, a Web Designer and FrontEnd Engineer with more than 25 years of experience and my goal has always been to build simple, accessible and visually appealing User Interfaces for Webpages, WebApps, and Mobile.
+Hi, I'm Xico Trujano, a FrontEnd Designer with more than 25 years of experience and my goal has always been to build simple, accessible and visually appealing User Interfaces for Webpages, WebApps, and Mobile.
 
-What's most important is to make the web a better place by making simple to use developments. My hard skills are hand coded HTML and CSS with web standards, accessibility and web semantics, you can take a look at my code at https://dratl.github.io/github.io/
+What's most important is to make the web a better place by making simple to use developments. My hard skills are hand coded HTML and CSS with web standards, accessibility and web semantics, you can take a look at my playground at https://dratl.github.io/github.io/
 
-I can design interfaces with every major design app or design directly by coding which Is the way I like the most.
+I can design interfaces with every major design app or design directly by coding which is the way I like the most.
 
 Sincerely,
 Xico Trujano
@@ -29,7 +27,7 @@ Xico Trujano
 Share with me one project you're most proud of.
 I was Design Chief at a Mexican StartUp called SocialDecode. We did social TV Ratings and build a system to track social interactions with TV Shows.
 
-I was in charge of designing all the digital assets which included: Websites, Custom Dashboards feeded by our API, Landin Pages, Email Campaigns, Infographics, client deliverables and Mobile Apps.
+I was in charge of designing all the digital assets which included: Websites, Custom Dashboards feeded by our API, Landing Pages, Email Campaigns, Infographics, client deliverables and Mobile Apps.
 
 Altough the StartUp went bankruptcy there's still information on the web and you can see some of my work in my online portfolio.
 
@@ -51,6 +49,10 @@ Hola, soy Xico, un apasionado del diseño web con más de 20 años de experienci
 
 Diseñador web con una sólida base en HTML, CSS, principios de diseño responsivo, SEO técnico, diseño móvil y estándares de accesibilidad web. Atención a los detalles con dominio de varios programas y herramientas de diseño y programación. Amplios conocimientos de UI/UX y más de 20 años de experiencia en el diseño, desarrollo y mantenimiento de productos web visualmente atractivos y fáciles de usar. Deseoso de trabajar con equipos de diseño y desarrollo para contribuir y ofrecer soluciones web de alta calidad.
 
+Te invito a conocer mi sitio en: 
+
+https://dratl.github.io/github.io/
+
 Codecademy: Frontend Engineering Certification.
 UIE with Jared Spool: User Interface Engineering.
 
@@ -71,6 +73,8 @@ Mi nombre es Xico Trujano y me encantaría tener la oportunidad de colaborar con
 Cuento con una sólida base técnica en HTML, CSS, diseño responsivo, SEO técnico, diseño móvil y estándares de accesibilidad web. Me enfoco en los detalles y domino diversas herramientas de diseño y desarrollo, lo que me permite integrarme fácilmente con equipos multidisciplinarios y contribuir con soluciones web de alta calidad, tanto en experiencia de usuario como en rendimiento.
 
 Adjunto mi currículum y portafolio para su consideración. Estoy entusiasmado por la posibilidad de conversar con ustedes y conocer cómo puedo aportar al equipo.
+
+https://dratl.github.io/github.io/
 
 Muchas gracias por su atención.
 

@@ -89,7 +89,7 @@ body, .montserrat-parrafos, button {
       flex-direction: column;
     }
     main article.aboutme section {
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -244,7 +244,7 @@ main article.chuck-norris section button:hover {
       flex-direction: column;
     }
     main article.chuck-norris section {
-      width: 100%;
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -462,6 +462,10 @@ main article.chuck-norris section button:hover {
     padding: 60px 12px 36px 12px;
   }
 
+  main article.video section video {
+    width: 640px;
+  }
+
   main article.video section h4 {
     color: #FFF;
     font-size: 48px;
@@ -473,7 +477,7 @@ main article.chuck-norris section button:hover {
     font-size: 16px;
     font-weight: 300;
     text-align: center;
-    width: 640px;
+    max-width: 640px;
     margin: 24px auto;
     padding: 24px;
     background-color: #121212;
@@ -607,3 +611,9 @@ main article.chuck-norris section button:hover {
     }
 }
 
+@media screen and (max-width: 780px) {
+  main article.video section video {
+    width: 90%;
+    height: auto;
+  }
+}
