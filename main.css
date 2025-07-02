@@ -87,10 +87,16 @@ body, .montserrat-parrafos, button {
   @media only screen and (max-width: 720px) {
     main article.aboutme {
       flex-direction: column;
+      margin-top: 90px;
     }
+    
     main article.aboutme section {
       width: 90%;
       margin: 0 auto;
+    }
+
+    main article.aboutme section:nth-child(2) {
+      padding: 0 12px 60px;
     }
   }
 
@@ -246,6 +252,9 @@ main article.chuck-norris section button:hover {
     main article.chuck-norris section {
       width: 90%;
       margin: 0 auto;
+    }
+    main article.chuck-norris section:nth-child(2) {
+      padding: 0 12px 60px;
     }
   }
 
@@ -485,6 +494,13 @@ main article.chuck-norris section button:hover {
     border-radius: 8px;
   }
 
+  @media screen and (max-width: 780px) {
+    main article.video section video {
+      width: 90%;
+      height: auto;
+    }
+  }
+
   /* Footer */
   
   footer {
@@ -591,6 +607,25 @@ main article.chuck-norris section button:hover {
     align-items: center; 
   }
 
+  @media screen and (max-width: 780px) {
+    footer section {
+      width: 90%;
+    }
+
+    footer section:nth-child(2) {
+      padding: 0 12px 60px;
+    }
+
+    footer form input {
+      width: 90%;
+    }
+
+    footer form button {
+      width: 96%;
+      margin: 12px 0;
+    }
+  }
+
   /* Animations */
 
   @keyframes wiggle {
@@ -611,9 +646,3 @@ main article.chuck-norris section button:hover {
     }
 }
 
-@media screen and (max-width: 780px) {
-  main article.video section video {
-    width: 90%;
-    height: auto;
-  }
-}
