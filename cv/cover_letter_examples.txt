@@ -53,6 +53,9 @@ Te invito a conocer mi sitio en:
 
 https://dratl.github.io/github.io/
 
+Saludos
+Xico Trujano
+
 Codecademy: Frontend Engineering Certification.
 UIE with Jared Spool: User Interface Engineering.
 
@@ -85,3 +88,17 @@ Saludos cordiales, Xico Trujano
 UX/UI designer who also codes
 
 //
+
+Yumerang was a television companion app designed to deliver meme-style content as a second-screen experience while watching TV. Our core challenge was optimizing the flow of information and determining how best to surface the most relevant shows based on user preferences.
+
+We considered two approaches:
+
+Prompt users to complete an online questionnaire outlining their TV interests.
+
+Automatically push trending content and learn user preferences based on in-app behavior—favoring shows according to likes and dislikes.
+
+Ultimately, we chose the second path: letting user interactions guide personalized content delivery. This approach allowed us to continuously refine recommendations in real time, providing a more seamless and engaging user experience.
+
+//
+
+While I haven’t worked directly on localization in a live software project, I have a solid understanding of the process and its key stages. Localization involves adapting a software product to suit different languages, cultural norms, and regional expectations. I also understand the importance of tailoring not just text, but also formats (like dates and currencies), visuals, and user interaction patterns to make the product feel native in each market.
