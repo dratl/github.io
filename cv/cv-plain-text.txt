@@ -1,0 +1,133 @@
+XicoténcatlTrujano
+“Senior UX/UI Designer | Frontend Developer | Digital Experience Strategist”
+xtrujano@mac.com
+Texcoco, México.
+https://dratl.github.io/github.io
+
+Summary
+Multidisciplinary UX/UI Designer and Frontend Developer with 20+ years of experience crafting user-centric digital products across web, mobile, and interactive platforms. Expert in HTML, CSS, JavaScript, and React, with a keen eye for responsive design, accessibility standards, and localization strategies. Proven ability to bridge creative direction with technical execution—delivering branded, scalable solutions that elevate user experience. Whether prototyping interfaces or leading cross-functional teams, I bring precision, empathy, and strategic insight to every project.
+Experience
+
+Founder & Frontend Visionary — Corazoncito Tirano (2003–2013) 
+    Led the development of responsive web applications using HTML, CSS and JavaScript.
+    Worked closely with Backend developers to integrate Frontend code with server-side logic.
+    Conducted usability testing improving user experience by 80%.
+    Collaborated with engineering, design, content and marketing teams to deliver high quality products on time and within budget.
+
+Project Leader — Auditor Service by DLR Group (2013–2014)
+    Led the development and maintenance of a customer experience and mystery shopping web application, overseeing collaboration with an overseas engineering team and providing technical support to internal business stakeholders.
+    Designed and implemented the user interface for a new product, Feedback Point, with a strong focus on multi-device compatibility and consistent survey presentation across diverse environments.
+    Migrated a large library of educational and analytical video content from a private hosting service to Vimeo Enterprise, achieving over 75% cost reduction while enhancing accessibility, branding, and collaboration capabilities.
+
+UX Lead for Data-Driven Media Experiences — Social Decode by DLR Group (2014–2016)
+    Ensured brand consistency across all products and client-facing deliverables, with a strong emphasis on clarity and the strategic value of the information delivered.
+    Collaborated with the development team to deliver custom dashboards featuring tailored data analysis solutions for clients in government and media sectors, aligning insights with each industry's unique operational goals.
+    Led UX/UI efforts for a mobile second-screen app, applying user-centered design principles to enhance TV viewing with real-time memes, show data, and interactive content tailored to audience preferences.
+
+Multidisciplinary Entrepreneur & Consultant — Independent (2016–Present)
+    Acquired and rebranded an old coffee shop, redesigning the customer experience to evoke nostalgic flavors and ambiance reminiscent of traditional home made cuisine, resulting in a 300% increase in sales.
+    Managed real estate operations, including administration and legal services, ensuring land plots remained maintained and service payments were up to date, while actively identifying and engaging potential buyers.
+    Provided IT consulting to local businesses, guiding strategic use of internet tools and social media platforms to boost online visibility and customer engagement.
+
+Education
+
+Universidad Intercontinental
+Bachelor of Laws (LLB), Law
+2019-2023
+
+Universidad Autonoma Metropolitana
+Bachelor of Arts (BA), VisualDesign
+1994-1998
+
+Core Technologies
+
+UI Development - UX/UI - Wireframing - Prototyping - Usability Testing - User-centered design - HTML - CSS - Javascript - Responsive Web Design - Flexbox - Adobe - Affinity - Visual Studio Code
+
+Additional Tech Stack
+
+React - Node.js - Curl - Git - Windows - Linux - MacOS - npm - Apache - MySQL - MailChimp - Deepseek - Grok
+
+Interpersonal Skills
+
+Self Motivated - Teamwork - Creativity - Adaptability - Problem solving - Patience - Initiative - Responsiveness - Empathy - Stress management - Client relation
+
+Certificates/Courses
+
+Codecademy, professional certification: Frontend Engineering - Focused on HTML, CSS, Js, React, Redux, Data Structures and Algorithms
+UIE with Jared Spool: User Interface Engineering - Emphasis on research-driven design
+
+Languages
+
+Spanish: Native or Bilingual
+English: C1 Advanced.
+French: B2 Upper-Intermediate
+
+
+// Español //
+
+XicoténcatlTrujano
+Senior UX/UI Designer | Frontend Developer | Digital Experience Strategist»
+xtrujano@mac.com
+Texcoco, México.
+https://dratl.github.io/github.io
+
+Resumen
+Diseñador UX/UI multidisciplinario y Desarrollador Frontend con más de 20 años de experiencia creando experiencias digitales centradas en el usuario para plataformas web, móviles e interactivas. Especializado en desarrollo con HTML, CSS y JavaScript, con sólido dominio en diseño responsivo y accesibilidad web. Capacidad demostrada para conectar visión creativa con ejecución técnica, liderando proyectos escalables y alineados con objetivos de marca y negocio. Precisión, empatía y pensamiento estratégico definen cada una de mis contribuciones.
+
+Experiencia
+
+Fundador & Frontend Visionary - Corazoncito Tirano (2003-2013) 
+    Lideré el desarrollo de aplicaciones web responsivas utilizando HTML, CSS y JavaScript.
+    Coordiné la integración con lógica backend en colaboración directa con desarrolladores del servidor.
+    Implementé pruebas de usabilidad, mejorando la experiencia de usuario en un 80%.
+    Colaboré transversalmente con equipos de ingeniería, diseño, contenidos y marketing para entregar productos de alta calidad en tiempo y forma.
+
+
+Project Manager - Auditor Service by DLR Group (2013-2014)
+    Supervisión y mantenimiento de una aplicación web de Consumer Experience y Mystery Shopping, supervisando el trabajo de un equipo de desarrollo a distancia y proveyendo asistencia técnica a las áreas de negocio.
+    Diseño e implementación de una interface responsiva para un nuevo producto llamado Fedback Point, enfocado en mantener la compatibilidad en variedad de dispositivos y consistencia en la presentación de encuestas de servicio en diferentes comtextos.
+    Migración de la librería de videos para capacitación y análisis de experiencias de un sistema propietario de distribución de video a Vimeo Enterprise, reduciendo costos en más del 75% y mejorando la accesibilidad, colaboración y branding.
+
+UX Lead for Data-Driven Media Experiences - Social Decode by DLR Group (2014-2016)
+    Me aseguré de que la marca mantuviera su coherencia en todos los productos y materiales entregados al cliente, haciendo especial hincapié en la claridad y el valor estratégico de la información proporcionada.
+    Colaboré con el área técnica en el desarrollo de dashboards personalizados para entidades de gobierno y medios, alineando análisis de datos con sus metas operativas.
+    Lideré el diseño UX/UI de una app móvil de segunda pantalla, incorporando diseño centrado en el usuario para enriquecer la experiencia televisiva con memes, datos en tiempo real y contenido interactivo.
+
+Emprendedora y consultora multidisciplinar - Independiente (2016-Presente)
+    Adquirí y cambie la marca de una antigua cafetería, rediseñando la experiencia del cliente para evocar sabores nostálgicos y un ambiente que recuerda a la cocina casera tradicional, lo que resultó en un aumento del 300% en las ventas.
+    Gestión de operaciones inmobiliarias, incluyendo servicios administrativos y jurídicos, garantizando el mantenimiento de las inmuebles y el pago al día de los servicios, al tiempo que identificaba y captaba activamente a posibles compradores.
+    Brindé consultoría IT a negocios locales, optimizando su presencia digital y engagement mediante uso estratégico de redes sociales y herramientas web.
+
+Educación
+
+Universidad Intercontinental
+Licenciatura en Derecho
+2019-2023
+
+Universidad Autónoma Metropolitana
+Licenciatura en Diseño de la Comunicación Gráfica
+1994-1998
+
+Tecnologías principales
+
+UI Development - UX/UI - Wireframing - Prototyping - Usability Testing - User-centered design - HTML - CSS - Javascript - Responsive Web Design - Flexbox - Adobe - Affinity - Visual Studio Code
+
+Otras tecnologías
+
+React - Node.js - Curl - Git - Windows - Linux - MacOS - npm - Apache - MySQL - MailChimp - Deepseek - Grok
+
+Habilidades interpersonales
+
+Automotivación - Trabajo en equipo - Creatividad - Adaptabilidad - Resolución de problemas - Paciencia - Iniciativa - Capacidad de respuesta - Empatía - Gestión del estrés 
+
+Certificados/Cursos
+
+Codecademy, certificación profesional: Frontend Engineering - Enfocado en HTML, CSS, Js, React, Redux, Estructuras de Datos y Algoritmos
+UIE con Jared Spool: User Interface Engineering - Énfasis en el diseño impulsado por la investigación
+
+Idiomas
+
+Español: Nativo o Bilingüe
+Inglés: C1 Avanzado.
+Francés: B2 Intermedio Alto
+
