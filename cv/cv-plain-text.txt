@@ -6,6 +6,7 @@ https://dratl.github.io/github.io
 
 Summary
 Multidisciplinary UX/UI Designer and Frontend Developer with 20+ years of experience crafting user-centric digital products across web, mobile, and interactive platforms. Expert in HTML, CSS, JavaScript, and React, with a keen eye for responsive design, accessibility standards, and localization strategies. Proven ability to bridge creative direction with technical execution—delivering branded, scalable solutions that elevate user experience. Whether prototyping interfaces or leading cross-functional teams, I bring precision, empathy, and strategic insight to every project.
+
 Experience
 
 Founder & Frontend Visionary — Corazoncito Tirano (2003–2013) 
@@ -66,7 +67,7 @@ French: B2 Upper-Intermediate
 // Español //
 
 XicoténcatlTrujano
-Senior UX/UI Designer | Frontend Developer | Digital Experience Strategist»
+Senior UX/UI Designer | Frontend Developer | Digital Experience Strategist
 xtrujano@mac.com
 Texcoco, México.
 https://dratl.github.io/github.io
@@ -93,7 +94,7 @@ UX Lead for Data-Driven Media Experiences - Social Decode by DLR Group (2014-201
     Colaboré con el área técnica en el desarrollo de dashboards personalizados para entidades de gobierno y medios, alineando análisis de datos con sus metas operativas.
     Lideré el diseño UX/UI de una app móvil de segunda pantalla, incorporando diseño centrado en el usuario para enriquecer la experiencia televisiva con memes, datos en tiempo real y contenido interactivo.
 
-Emprendedora y consultora multidisciplinar - Independiente (2016-Presente)
+Consultoría y administración - Independiente (2016-Presente)
     Adquirí y cambie la marca de una antigua cafetería, rediseñando la experiencia del cliente para evocar sabores nostálgicos y un ambiente que recuerda a la cocina casera tradicional, lo que resultó en un aumento del 300% en las ventas.
     Gestión de operaciones inmobiliarias, incluyendo servicios administrativos y jurídicos, garantizando el mantenimiento de las inmuebles y el pago al día de los servicios, al tiempo que identificaba y captaba activamente a posibles compradores.
     Brindé consultoría IT a negocios locales, optimizando su presencia digital y engagement mediante uso estratégico de redes sociales y herramientas web.
