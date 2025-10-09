@@ -34,18 +34,6 @@
             <img src="loading-frames/frame08.svg" class="svg-frame frame-08" alt="Frame 8">
         </div>
     </div>
-    <script>
-        // Ocultar loader cuando la página cargue
-        window.addEventListener('load', function() {
-            const loader = document.querySelector('.loader-container');
-            loader.style.opacity = '0';
-            loader.style.transition = 'opacity 6s ease';
-            
-            setTimeout(() => {
-                loader.style.display = 'none';
-            }, 6000);
-        });
-    </script>
     <header>
         <h1><span>X</span><span>i</span><span>c</span><span>o</span><span>t</span><span>e</span><span>n</span><span>c</span><span>a</span><span>t</span><span>l</span></h1>
         <h2>Frontend Designer</h2>
@@ -184,6 +172,7 @@
         </section>
     </footer>
     <script src="js/chuck-norris.js"></script>
+    <script src="js/loader.js"></script>
     <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
 </body>
 </html>
