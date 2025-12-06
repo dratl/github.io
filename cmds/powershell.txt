@@ -1,3 +1,17 @@
+
+// PowerShell tiene restringida la ejecución de scripts
+
+Ejecutar npm desde cmd.exe o terminal de Windows (sin PowerShell)
+
+Cambiar temporalmente la política en PowerShell (solo para la sesión actual)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Evita este problema en el futuro. Usa Windows Terminal o VS Code Terminal con cmd o Git Bash.
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+
+// Api Gob
 # Define the API endpoint
 $apiUrl = "https://api.datos.gob.mx/v1/gobmx.facts"
 
@@ -29,7 +43,7 @@ if ($response -and $response.results) {
     $jsonResponse = $response | ConvertTo-Json -Depth 10
     
     # Save the JSON response to a file
-    $jsonResponse | Out-File -FilePath "C:\Users\xico\Sites\github.io\api_response.json"
+    $jsonResponse | Out-File -FilePath "_PATH_api_response.json"
     
     Write-Output "Response saved to api_response.json"
 } else {
