@@ -1,5 +1,20 @@
 Cover Letter:
 
+To whom it may concern,
+
+My name is Xico Trujano. I am a web designer from Mexico City with over 20 years of experience in front-end and UX/UI design. I have experience with websites, mobile apps, web apps, deliverables, landing pages, email marketing, and illustration.
+
+I have a strong understanding of the technology that runs the internet, with special expertise in HTML, CSS, and usability. I keep it simple and easy for users by using standard patterns to avoid confusion. The important thing is to deliver the message everywhere it can go, especially now with so many devices and screen sizes.
+
+I am currently looking for a remote position with an interesting company where my work will be appreciated. I believe I can contribute a lot to your team and be a valuable member.
+
+Please take a look at my website, where you will see how seriously I take designing with code in mind to improve accessibility. My design style is simple, but my illustration work specializes in vector, color, and pixel art.
+
+I would be honored to hear from you and discuss the possibility of working together.
+
+With kind regards,
+Xico Trujano
+
 Hi,
 
 As an experienced Web Designer with over 25 years of expertise, I am excited about the opportunity to contribute to your team. I have a solid background in designing, developing, and maintaining digital assets to deliver a cohesive and functional brand identity. My experience spans websites, mobile apps, deliverables, web apps, landing pages, emailing, and more, enabling me to help you achieve your online requirements.
